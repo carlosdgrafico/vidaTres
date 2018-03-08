@@ -1,0 +1,1044 @@
+/*  BASE  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?f4cmtc");
+  src: url("../fonts/icomoon.eot?f4cmtc#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?f4cmtc") format("truetype"), url("../fonts/icomoon.woff?f4cmtc") format("woff"), url("../fonts/icomoon.svg?f4cmtc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, app/scss/base/icon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 27, app/scss/base/icon.scss */
+.icon-asistencia:before {
+  content: "\e900"; }
+
+/* line 30, app/scss/base/icon.scss */
+.icon-audio:before {
+  content: "\e901"; }
+
+/* line 33, app/scss/base/icon.scss */
+.icon-avion:before {
+  content: "\e902"; }
+
+/* line 36, app/scss/base/icon.scss */
+.icon-cerrar:before {
+  content: "\e903"; }
+
+/* line 39, app/scss/base/icon.scss */
+.icon-chat:before {
+  content: "\e904"; }
+
+/* line 42, app/scss/base/icon.scss */
+.icon-Combined-Shape:before {
+  content: "\e905"; }
+
+/* line 45, app/scss/base/icon.scss */
+.icon-dental:before {
+  content: "\e906"; }
+
+/* line 48, app/scss/base/icon.scss */
+.icon-edit:before {
+  content: "\e907"; }
+
+/* line 51, app/scss/base/icon.scss */
+.icon-farmacia:before {
+  content: "\e908"; }
+
+/* line 54, app/scss/base/icon.scss */
+.icon-hombre:before {
+  content: "\e909"; }
+
+/* line 57, app/scss/base/icon.scss */
+.icon-info:before {
+  content: "\e90a"; }
+
+/* line 60, app/scss/base/icon.scss */
+.icon-lupa:before {
+  content: "\e90b"; }
+
+/* line 63, app/scss/base/icon.scss */
+.icon-mujer:before {
+  content: "\e90c"; }
+
+/* line 66, app/scss/base/icon.scss */
+.icon-user:before {
+  content: "\e90d"; }
+
+/* line 1, app/scss/base/inicializacion.scss */
+html {
+  font-size: 16px; }
+
+/* line 5, app/scss/base/inicializacion.scss */
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  font-weight: 300;
+  margin: 0;
+  overflow-x: hidden !important;
+  padding: 0;
+  position: relative; }
+
+/* line 17, app/scss/base/inicializacion.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+p {
+  margin: 0;
+  padding: 0; }
+
+/* line 35, app/scss/base/inicializacion.scss */
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+/* line 40, app/scss/base/inicializacion.scss */
+a:active,
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none; }
+
+/* line 48, app/scss/base/inicializacion.scss */
+ol,
+ul {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 56, app/scss/base/inicializacion.scss */
+img {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+
+/* COMPONENETES */
+/* line 1, app/scss/componentes/generales.scss */
+.plan-cliente {
+  height: 100%;
+  padding: 2em 0;
+  width: 100%; }
+
+/* line 8, app/scss/componentes/generales.scss */
+.checkbox {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: middle;
+  text-align: left;
+  vertical-align: bottom; }
+
+/* line 18, app/scss/componentes/generales.scss */
+label {
+  display: inline-block;
+  color: #0836C0;
+  cursor: pointer;
+  position: relative; }
+  /* line 26, app/scss/componentes/generales.scss */
+  label span {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    border: 2px solid #01A567;
+    border-radius: 50%;
+    vertical-align: -6px;
+    margin-right: 10px;
+    transition: background-color 150ms 200ms, -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89), -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89); }
+    /* line 41, app/scss/componentes/generales.scss */
+    label span:before {
+      content: "";
+      width: 0px;
+      height: 2px;
+      border-radius: 2px;
+      background: #01A567;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 13px;
+      left: 7px;
+      transition: width 50ms ease 50ms;
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%; }
+    /* line 55, app/scss/componentes/generales.scss */
+    label span:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: #01A567;
+      position: absolute;
+      -webkit-transform: rotate(305deg);
+              transform: rotate(305deg);
+      top: 16px;
+      left: 9px;
+      transition: width 50ms ease;
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%; }
+  /* line 73, app/scss/componentes/generales.scss */
+  label:hover span:before {
+    width: 5px;
+    transition: width 100ms ease; }
+  /* line 78, app/scss/componentes/generales.scss */
+  label:hover span:after {
+    width: 10px;
+    transition: width 150ms ease 100ms; }
+
+/* line 86, app/scss/componentes/generales.scss */
+input[type="checkbox"] {
+  display: none; }
+  /* line 93, app/scss/componentes/generales.scss */
+  input[type="checkbox"]:checked + label span {
+    background-color: #fff;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+    /* line 97, app/scss/componentes/generales.scss */
+    input[type="checkbox"]:checked + label span:after {
+      width: 10px;
+      background: #1790b5;
+      transition: width 150ms ease 100ms; }
+    /* line 103, app/scss/componentes/generales.scss */
+    input[type="checkbox"]:checked + label span:before {
+      width: 5px;
+      background: #1790b5;
+      transition: width 150ms ease 100ms; }
+  /* line 111, app/scss/componentes/generales.scss */
+  input[type="checkbox"]:checked + label:hover span {
+    background-color: #fff;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+    /* line 115, app/scss/componentes/generales.scss */
+    input[type="checkbox"]:checked + label:hover span:after {
+      width: 10px;
+      background: #1790b5;
+      transition: width 150ms ease 100ms; }
+    /* line 121, app/scss/componentes/generales.scss */
+    input[type="checkbox"]:checked + label:hover span:before {
+      width: 5px;
+      background: #1790b5;
+      transition: width 150ms ease 100ms; }
+
+/* line 133, app/scss/componentes/generales.scss */
+.checkbox label, .radio label {
+  padding-left: 0 !important; }
+
+/* line 1, app/scss/componentes/step.scss */
+.step {
+  color: #000000;
+  position: relative;
+  text-align: center;
+  width: 350px;
+  /* Esta es la clase que se agrega para que cammbie de posicion el icon del avion */ }
+  /* line 7, app/scss/componentes/step.scss */
+  .step__linea {
+    background-color: #0836C0;
+    height: 2px;
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    width: 250px;
+    z-index: -1; }
+  /* line 19, app/scss/componentes/step.scss */
+  .step__paso {
+    background-color: #fff;
+    border: 1px solid #0836C0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    line-height: 3.125rem;
+    margin-right: 2em;
+    text-align: center;
+    width: 50px; }
+    /* line 29, app/scss/componentes/step.scss */
+    .step__paso:last-child {
+      margin-right: 0; }
+  /* line 34, app/scss/componentes/step.scss */
+  .step__numero {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 700; }
+  /* line 40, app/scss/componentes/step.scss */
+  .step__paso--active {
+    background-color: #0836C0;
+    position: relative; }
+    /* line 43, app/scss/componentes/step.scss */
+    .step__paso--active:before {
+      content: "\e902";
+      color: #fff;
+      font-family: 'icomoon';
+      font-size: 24px;
+      font-size: 1.5rem;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0; }
+    /* line 53, app/scss/componentes/step.scss */
+    .step__paso--active .step__numero {
+      color: #0836C0; }
+
+/* line 1, app/scss/componentes/logotipo.scss */
+.logotipo {
+  margin-top: .5em;
+  max-width: 70px; }
+
+/* line 1, app/scss/componentes/titulo.scss */
+.titulo {
+  margin: 3em 0 4em 0;
+  position: relative; }
+  /* line 5, app/scss/componentes/titulo.scss */
+  .titulo__icon {
+    display: inline-block;
+    background-color: #0836C0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.125rem;
+    height: 40px;
+    line-height: 40px;
+    line-height: 2.5rem;
+    text-align: center;
+    width: 40px; }
+  /* line 16, app/scss/componentes/titulo.scss */
+  .titulo__name {
+    color: #0836C0;
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 20px;
+    line-height: 1.25rem;
+    margin: 0 0 0 1em;
+    text-transform: uppercase;
+    vertical-align: top; }
+  /* line 27, app/scss/componentes/titulo.scss */
+  .titulo__descripcion {
+    display: block;
+    font-weight: 400; }
+
+/* line 1, app/scss/componentes/auxiliares.scss */
+.auxiliares {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+  /* line 7, app/scss/componentes/auxiliares.scss */
+  .auxiliares__icon {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #0836C0;
+    border-radius: 50%;
+    color: #0836C0;
+    height: 35px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    margin-left: .5em;
+    text-align: center;
+    transition: all .3s ease-out;
+    width: 35px; }
+    /* line 21, app/scss/componentes/auxiliares.scss */
+    .auxiliares__icon:hover {
+      background-color: #0836C0;
+      color: #fff; }
+
+/* line 30, app/scss/componentes/auxiliares.scss */
+.auxiliares--negativo .auxiliares__icon {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  color: #fff; }
+  /* line 35, app/scss/componentes/auxiliares.scss */
+  .auxiliares--negativo .auxiliares__icon:hover {
+    background-color: white;
+    color: #0836C0; }
+
+/* line 1, app/scss/componentes/red.scss */
+.red {
+  background-color: #fff;
+  margin: 2em 0 0 0;
+  /* Esta es la clase que se agrega cuando el usaurio selecciona */ }
+  /* line 5, app/scss/componentes/red.scss */
+  .red__container {
+    border-radius: 7px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    height: auto;
+    overflow: hidden;
+    transition: all .3s ease-out; }
+    /* line 12, app/scss/componentes/red.scss */
+    .red__container:hover {
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); }
+  /* line 17, app/scss/componentes/red.scss */
+  .red__header {
+    background-color: #0836C0;
+    color: #fff;
+    padding: 1em; }
+  /* line 23, app/scss/componentes/red.scss */
+  .red__titulo {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    margin: 0; }
+  /* line 29, app/scss/componentes/red.scss */
+  .red__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    overflow: hidden;
+    padding: 0; }
+  /* line 38, app/scss/componentes/red.scss */
+  .red__clinica {
+    max-width: 150px; }
+  /* line 42, app/scss/componentes/red.scss */
+  .red__footer {
+    background-color: #EFEFEF;
+    padding: 1em; }
+    /* line 46, app/scss/componentes/red.scss */
+    .red__footer .red__clinica {
+      max-width: 120px; }
+      /* line 49, app/scss/componentes/red.scss */
+      .red__footer .red__clinica--vi {
+        margin-top: .3em; }
+  /* line 56, app/scss/componentes/red.scss */
+  .red--active {
+    position: relative; }
+    /* line 59, app/scss/componentes/red.scss */
+    .red--active .red__container {
+      border: 2px solid #01A567; }
+    /* line 63, app/scss/componentes/red.scss */
+    .red--active .red__header {
+      background-color: #01A567; }
+    /* line 67, app/scss/componentes/red.scss */
+    .red--active:before {
+      background-color: #fff;
+      border: 2px solid #01A567;
+      border-radius: 50%;
+      content: "\e905";
+      color: #01A567;
+      font-family: 'icomoon';
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 40px;
+      line-height: 2.5rem;
+      height: 40px;
+      position: absolute;
+      top: -1em;
+      right: -1em;
+      width: 40px;
+      text-align: center; }
+
+/* line 1, app/scss/componentes/plan.scss */
+.plan {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  min-width: 420px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: scroll;
+  z-index: 100; }
+  /* line 12, app/scss/componentes/plan.scss */
+  .plan__header {
+    background-color: #0836C0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 19px;
+    line-height: 1.1875rem;
+    padding: 1.5em;
+    position: relative; }
+  /* line 23, app/scss/componentes/plan.scss */
+  .plan__cliente {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    font-weight: 600;
+    margin: .5em 0; }
+    /* line 28, app/scss/componentes/plan.scss */
+    .plan__cliente span {
+      display: block; }
+  /* line 33, app/scss/componentes/plan.scss */
+  .plan__saldo {
+    font-weight: 600; }
+  /* line 37, app/scss/componentes/plan.scss */
+  .plan__edit {
+    font-size: 22px;
+    font-size: 1.375rem; }
+  /* line 41, app/scss/componentes/plan.scss */
+  .plan__beneficiarios {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em; }
+  /* line 47, app/scss/componentes/plan.scss */
+  .plan__beneficiarios-icon {
+    font-size: 30px;
+    font-size: 1.875rem;
+    margin-left: .5em; }
+  /* line 52, app/scss/componentes/plan.scss */
+  .plan__beneficiarios-link {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-size: 0.75rem;
+    text-decoration: none; }
+    /* line 58, app/scss/componentes/plan.scss */
+    .plan__beneficiarios-link:hover {
+      color: #fff;
+      opacity: .7; }
+  /* line 65, app/scss/componentes/plan.scss */
+  .plan__body {
+    background-color: #fff;
+    color: #0836C0;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 16px;
+    line-height: 1rem; }
+  /* line 72, app/scss/componentes/plan.scss */
+  .plan__prestadores {
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    font-weight: 600;
+    padding: 1.5em;
+    position: relative; }
+  /* line 81, app/scss/componentes/plan.scss */
+  .plan__prestadores-titulo {
+    display: inline-block;
+    margin-right: 2em;
+    vertical-align: top; }
+  /* line 87, app/scss/componentes/plan.scss */
+  .plan__add {
+    display: inline-block;
+    vertical-align: top; }
+  /* line 92, app/scss/componentes/plan.scss */
+  .plan__red {
+    position: relative; }
+    /* line 95, app/scss/componentes/plan.scss */
+    .plan__red:before {
+      background-color: #0836C0;
+      border-radius: 50%;
+      content: '';
+      display: inline-block;
+      margin-right: .5em;
+      height: 5px;
+      width: 5px; }
+  /* line 106, app/scss/componentes/plan.scss */
+  .plan__close {
+    border: 1px solid #D8D6D6;
+    border-radius: 50%;
+    color: #D8D6D6;
+    display: inline-block;
+    height: 20px;
+    font-size: 8px;
+    font-size: 0.5rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    text-align: center;
+    width: 20px; }
+  /* line 122, app/scss/componentes/plan.scss */
+  .plan__cobertura {
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: space-between; }
+  /* line 128, app/scss/componentes/plan.scss */
+  .plan__chart {
+    padding: 1.5em;
+    position: relative;
+    width: 50%; }
+  /* line 134, app/scss/componentes/plan.scss */
+  .plan__chart-titulo {
+    font-weight: 600;
+    text-align: center; }
+    /* line 137, app/scss/componentes/plan.scss */
+    .plan__chart-titulo span {
+      display: block; }
+  /* line 142, app/scss/componentes/plan.scss */
+  .plan__productos {
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: space-between; }
+  /* line 148, app/scss/componentes/plan.scss */
+  .plan__seguro, .plan__adicionales {
+    padding: 1.5em;
+    position: relative;
+    text-align: center;
+    width: 50%; }
+  /* line 155, app/scss/componentes/plan.scss */
+  .plan__productos-titulo {
+    font-weight: 600; }
+  /* line 159, app/scss/componentes/plan.scss */
+  .plan__uf {
+    border: 1px solid #0836C0;
+    border-radius: 20px;
+    color: #0836C0;
+    display: inline-block;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1em 0 0 0;
+    padding: .5em 1em;
+    text-transform: uppercase; }
+  /* line 171, app/scss/componentes/plan.scss */
+  .plan__adicionales {
+    background-color: #F6F6F6;
+    position: relative; }
+  /* line 176, app/scss/componentes/plan.scss */
+  .plan__adicionales-productos {
+    display: flex;
+    justify-content: space-around; }
+  /* line 181, app/scss/componentes/plan.scss */
+  .plan__icon {
+    background-color: #E8403C;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    height: 35px;
+    margin-top: 1.5em;
+    position: relative;
+    text-align: center;
+    width: 35px; }
+    /* line 193, app/scss/componentes/plan.scss */
+    .plan__icon:after {
+      content: "\e903";
+      border: 1px solid #D8D6D6;
+      border-radius: 50%;
+      color: #D8D6D6;
+      display: inline-block;
+      height: 16px;
+      font-size: 7px;
+      font-size: 0.4375rem;
+      line-height: 16px;
+      line-height: 1rem;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      text-align: center;
+      width: 16px; }
+  /* line 210, app/scss/componentes/plan.scss */
+  .plan .icon-dental {
+    background-color: #0836C0; }
+  /* line 213, app/scss/componentes/plan.scss */
+  .plan .icon-farmacia {
+    background-color: #01A567; }
+  /* line 217, app/scss/componentes/plan.scss */
+  .plan__edit-productos {
+    font-size: 14px;
+    font-size: 0.875rem;
+    position: absolute;
+    top: 1.3em;
+    right: 1.3em; }
+  /* line 225, app/scss/componentes/plan.scss */
+  .plan__valores {
+    margin: 0; }
+  /* line 229, app/scss/componentes/plan.scss */
+  .plan__valores-item {
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em; }
+  /* line 236, app/scss/componentes/plan.scss */
+  .plan__valor-nombre {
+    font-weight: 600; }
+    /* line 238, app/scss/componentes/plan.scss */
+    .plan__valor-nombre span {
+      color: #01A567;
+      margin-right: 1em; }
+  /* line 245, app/scss/componentes/plan.scss */
+  .plan__monto span {
+    border: 1px solid #0836C0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    margin-left: 1em;
+    line-height: 20px;
+    text-align: center;
+    width: 20px; }
+  /* line 258, app/scss/componentes/plan.scss */
+  .plan__footer {
+    background-color: #0836C0;
+    color: #fff;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 19px;
+    line-height: 1.1875rem;
+    padding: 2em 1.5em;
+    position: relative; }
+  /* line 267, app/scss/componentes/plan.scss */
+  .plan__total-saldo {
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: .5em 0; }
+    /* line 271, app/scss/componentes/plan.scss */
+    .plan__total-saldo span {
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      margin-left: 1em; }
+  /* line 278, app/scss/componentes/plan.scss */
+  .plan__help {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 10px;
+    font-size: 0.625rem;
+    height: 22px;
+    margin-left: 1em;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    top: 1.5em;
+    right: 1.8em;
+    width: 22px; }
+  /* line 294, app/scss/componentes/plan.scss */
+  .plan__link {
+    background-color: #4B89D6;
+    color: #fff;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 19px;
+    line-height: 1.1875rem;
+    padding: 1em 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%; }
+    /* line 304, app/scss/componentes/plan.scss */
+    .plan__link:hover {
+      color: #fff;
+      opacity: .9; }
+
+/* line 2, app/scss/componentes/bar.scss */
+.bar__progreso {
+  background-color: #FDB72B;
+  border-radius: 20px;
+  height: 30px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  padding: 0 1em;
+  position: relative;
+  transition: all .3s ease-out;
+  width: 100%; }
+  /* line 13, app/scss/componentes/bar.scss */
+  .bar__progreso:after {
+    background-color: #4B89D6;
+    border-radius: 20px;
+    content: '';
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s ease-out;
+    width: 45%;
+    z-index: 10; }
+
+/* line 29, app/scss/componentes/bar.scss */
+.bar__progreso-info {
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 1.3em;
+  z-index: 11; }
+  /* line 35, app/scss/componentes/bar.scss */
+  .bar__progreso-info:last-child {
+    left: inherit;
+    right: 1.3em; }
+
+/* line 41, app/scss/componentes/bar.scss */
+.bar__info {
+  display: flex;
+  justify-content: space-between;
+  margin: .5em 0 0 0;
+  padding: 0 2em; }
+
+/* line 48, app/scss/componentes/bar.scss */
+.bar__titulo {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 16px;
+  line-height: 1rem; }
+
+/*
+La clase .bar--active es la que mueve la barra y cambia estilos
+por ahora esta con un hover para poder visualizar el efecto.
+*/
+/* line 66, app/scss/componentes/bar.scss */
+.bar:hover .bar__progreso {
+  background-color: #fff; }
+
+/* line 70, app/scss/componentes/bar.scss */
+.bar:hover .bar__progreso:after {
+  width: 70%; }
+
+/* line 74, app/scss/componentes/bar.scss */
+.bar:hover .bar__progreso-info:last-child {
+  color: #4B89D6;
+  left: inherit;
+  right: 1.3em; }
+
+/* line 1, app/scss/componentes/cobertura.scss */
+.seleccion-cobertura {
+  background-color: rgba(38, 98, 193, 0.2);
+  margin: 2em 0;
+  padding: 6em 0; }
+
+/* line 9, app/scss/componentes/cobertura.scss */
+.cobertura__header {
+  background-color: #0836C0;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 19px;
+  line-height: 1.1875rem;
+  font-weight: 600;
+  padding: 1.2em; }
+
+/* line 19, app/scss/componentes/cobertura.scss */
+.cobertura .auxiliares {
+  top: .5em;
+  right: 2em;
+  height: 0; }
+
+/* line 25, app/scss/componentes/cobertura.scss */
+.cobertura__chart {
+  text-align: center;
+  margin-top: 2em; }
+
+/* line 30, app/scss/componentes/cobertura.scss */
+.cobertura__detalle, .cobertura__opciones {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 35, app/scss/componentes/cobertura.scss */
+.cobertura__detalle {
+  border: 1px solid olive;
+  width: 130px;
+  height: 130px; }
+
+/* line 41, app/scss/componentes/cobertura.scss */
+.cobertura__opciones {
+  width: 40%; }
+  /* line 43, app/scss/componentes/cobertura.scss */
+  .cobertura__opciones:last-child {
+    width: 50%; }
+
+/* line 48, app/scss/componentes/cobertura.scss */
+.cobertura__opciones-item {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #0836C0;
+  display: inline-block;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+  font-weight: 400;
+  height: 44px;
+  margin: .5em;
+  overflow: hidden;
+  text-align: center;
+  transition: all .3s ease-out;
+  width: 44px; }
+  /* line 63, app/scss/componentes/cobertura.scss */
+  .cobertura__opciones-item:hover {
+    font-weight: 700; }
+  /* line 67, app/scss/componentes/cobertura.scss */
+  .cobertura__opciones-item--active {
+    background-color: #E8403C;
+    color: #fff;
+    font-weight: 700; }
+
+/* line 75, app/scss/componentes/cobertura.scss */
+.informativo {
+  color: #0836C0;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  margin: 4em 0 0 0; }
+  /* line 81, app/scss/componentes/cobertura.scss */
+  .informativo__titulo {
+    font-weight: 600; }
+  /* line 85, app/scss/componentes/cobertura.scss */
+  .informativo__container {
+    background-color: rgba(38, 98, 193, 0.1);
+    border: 1px solid #0836C0;
+    border-radius: 7px;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+    margin-top: 1em;
+    overflow: hidden; }
+  /* line 97, app/scss/componentes/cobertura.scss */
+  .informativo__cobertura, .informativo__tope {
+    border-right: 1px solid #0836C0;
+    padding: 1.5em;
+    position: relative;
+    text-align: left;
+    width: 60%; }
+  /* line 105, app/scss/componentes/cobertura.scss */
+  .informativo__tope {
+    border: none;
+    text-align: center;
+    width: 40%; }
+  /* line 111, app/scss/componentes/cobertura.scss */
+  .informativo__cobertura-titulo, .informativo__tope-titulo {
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-transform: uppercase; }
+    /* line 114, app/scss/componentes/cobertura.scss */
+    .informativo__cobertura-titulo span, .informativo__tope-titulo span {
+      display: block;
+      margin: 0; }
+  /* line 120, app/scss/componentes/cobertura.scss */
+  .informativo__tope-titulo {
+    margin-top: 2em; }
+  /* line 124, app/scss/componentes/cobertura.scss */
+  .informativo__item {
+    font-weight: 400;
+    margin-top: 1.2em;
+    width: 80%; }
+  /* line 130, app/scss/componentes/cobertura.scss */
+  .informativo__porcentaje {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #0836C0;
+    display: inline-block;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    font-weight: 700;
+    float: right;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px; }
+  /* line 146, app/scss/componentes/cobertura.scss */
+  .informativo .auxiliares {
+    top: 1em;
+    right: 1em; }
+
+/* line 3, app/scss/componentes/copago.scss */
+.copago {
+  color: #0836C0;
+  font-weight: 600; }
+  /* line 7, app/scss/componentes/copago.scss */
+  .copago__header {
+    position: relative; }
+    /* line 10, app/scss/componentes/copago.scss */
+    .copago__header .auxiliares {
+      top: -.5em; }
+  /* line 15, app/scss/componentes/copago.scss */
+  .copago__titulo {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    margin: 2em 0; }
+  /* line 21, app/scss/componentes/copago.scss */
+  .copago__accion {
+    display: inline-block;
+    margin-right: 2em;
+    vertical-align: middle;
+    width: 15%; }
+  /* line 29, app/scss/componentes/copago.scss */
+  .copago .checkbox {
+    width: 100%; }
+  /* line 34, app/scss/componentes/copago.scss */
+  .copago__opciones {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%; }
+  /* line 40, app/scss/componentes/copago.scss */
+  .copago__opciones-item {
+    border: 1px solid #0836C0;
+    border-radius: 30px;
+    color: #0836C0;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    font-weight: 700;
+    margin-left: 1em;
+    padding: .5em 1.5em;
+    text-transform: uppercase; }
+    /* line 51, app/scss/componentes/copago.scss */
+    .copago__opciones-item:hover {
+      border: 1px solid #4C88D6;
+      color: #0836C0; }
+  /* line 58, app/scss/componentes/copago.scss */
+  .copago .copago__opciones-item--active {
+    background-color: #E8403C;
+    border: 1px solid  #E8403C;
+    color: #fff; }
+  /* line 65, app/scss/componentes/copago.scss */
+  .copago__info {
+    border: 1px solid #0836C0;
+    border-radius: 7px;
+    margin-top: 2em;
+    padding: 1em;
+    position: relative; }
+    /* line 72, app/scss/componentes/copago.scss */
+    .copago__info .auxiliares {
+      top: .7em;
+      right: 1em; }
+  /* line 78, app/scss/componentes/copago.scss */
+  .copago__alert {
+    text-transform: uppercase;
+    text-align: center; }
+
+/* CLASES DE AYUDA - SIEMPRE AL FINAL */

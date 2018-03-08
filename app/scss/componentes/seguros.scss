@@ -1,0 +1,206 @@
+.seguros-adicionales{
+   background-color: #F6F6F6;
+   padding: 4em 0 6em 0;
+}
+
+
+.seguro{
+   background-color: #EBEBEB;
+   border-radius: 7px;
+   color: $primary-color;
+   @include font-size(10);
+   @include line-height(14);
+   display: flex;
+   margin-bottom: 1em;
+   justify-content: space-between;
+   overflow: hidden;
+
+   &__detalle{
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      padding: 2em;
+      position: relative;
+      width: 50%;
+
+      .auxiliares{
+         top: 1em;
+         right: 1em;
+      }
+   }
+
+   &__grafica{
+      margin-right: 1em;
+   }
+
+
+   &__icon{
+      background-color: $primary-color;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      @include font-size(30);
+      height: 70px;
+      margin-bottom: .5em;
+      line-height: 70px;
+      text-align: center;
+      width: 70px;
+   }
+
+   &__chart{
+      border: 1px solid red;
+      height: 70px;
+      width: 70px;
+   }
+
+   &__info{
+      text-align: left;
+   }
+
+   &__titulo{
+      @include font-size(14);
+      font-weight: 600;
+      text-transform: uppercase;
+   }
+
+   &__text{
+      color: #8B8B8B;
+      margin: .5em 0 1em 0;
+   }
+
+   &__footer{
+      font-weight: 600;
+      margin: 1em 0;
+   }
+
+   &__accion{
+      background-color: #F4F4F4;
+      border-radius: 50%;
+      color: #000;
+      display: inline-block;
+      @include font-size(12);
+      height: 40px;
+      margin-right: .5em;
+      line-height: 40px;
+      text-align: center;
+      transition: all .3s ease-out;
+      width: 40px;
+
+      &:hover{
+         background-color: #C0C8D2;
+      }
+   }
+
+   &__accion--active{
+      background-color: $primary-color;
+      color: #fff;
+      &:hover{
+         background-color: $primary-color;
+         color: #fff;
+      }
+   }
+
+
+
+   &__beneficios{
+      overflow: hidden;
+      background-color: #fff;
+      width: 50%;
+   }
+
+   &__lista{
+      display: inline-block;
+      height: 100%;
+      padding: 2.5em;
+      width: auto;
+   }
+
+   &__item{
+      display: flex;
+      margin-top: 1em;
+
+      .checkbox{
+         margin:0 .5em 0 0;
+      }
+   }
+
+   &__user{
+      @include font-size(24);
+   }
+
+   &__nombre{
+      display: inline-block;
+      @include font-size(13);
+      font-weight: 600;
+      margin-left: .5em;
+      span{
+         display: block;
+         @include font-size(10);
+         font-weight: 400;
+      }
+   }
+
+   &__nombre--total{
+      margin: 1em 0 0 0;
+      span{
+         display: inline-block;
+         margin-left: .3em;
+      }
+   }
+
+
+   &__close{
+      border: 1px solid #D8D6D6;
+      border-radius: 50%;
+      color: #D8D6D6;
+      display: inline-block;
+      height: 20px;
+      @include font-size(8);
+      @include line-height(20);
+      position: absolute;
+      top: 1.5em;
+      right: 3em;
+      text-align: center;
+      width: 20px;
+   }
+}
+
+
+
+
+
+
+.u-asistencia{
+   .icon-asistencia{
+      background-color: $asistencia-color;
+   }
+
+   .seguro__accion--active{
+      background-color: $asistencia-color;
+   }
+
+   .u-info{
+      border-radius: 20px;
+      @include font-size(8);
+      font-weight: 600;
+      text-transform: uppercase;
+      width: 70px;
+      span{
+         display: block;
+         font-weight: 400;
+         margin-top: -10px;
+         line-height: 0px;
+      }
+   }
+
+}
+
+.u-farmacia{
+   .icon-farmacia{
+      background-color: $farmacia-color;
+   }
+
+   .seguro__accion--active{
+      background-color: $farmacia-color;
+   }
+}

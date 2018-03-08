@@ -261,6 +261,7 @@ body
 									span 4.500 uf
 								.auxiliares
 									span.auxiliares__icon.icon-info
+
 	section.copago-maximo
 		.container
 			.row
@@ -273,7 +274,7 @@ body
 							.auxiliares
 								span.auxiliares__icon.icon-info
 								span.auxiliares__icon.icon-audio
-								
+
 						.copago__accion
 							.copago__check
 								.checkbox
@@ -286,17 +287,18 @@ body
 									label(for='no')
 										span
 										| No
-										
+
 						.copago__opciones
 							a.copago__opciones-item(href="javascript:;" ) 30 uf
 							a.copago__opciones-item.copago__opciones-item--active(href="javascript:;" ) 40 uf
 							a.copago__opciones-item(href="javascript:;" ) 50 uf
 							a.copago__opciones-item(href="javascript:;" ) 75 uf
-							
+
 						.copago__info
 							p.copago__alert tope anual copago máximo hospitalario 6.500 uf
 							.auxiliares
 								span.auxiliares__icon.icon-info
+
 	section.buscador
 		.container
 			.row
@@ -321,7 +323,7 @@ body
 					.buscador__campo
 						span.buscador__icon.icon-lupa
 						input(type="text", name="", placeholder="Buscar prestaciones")
-							
+
 				.col-xs-8
 					.buscador__titulos
 						.buscador__titulo
@@ -339,7 +341,7 @@ body
 						.buscador__titulo
 							span.buscador__titulo-icon.icon-info
 							span.buscador__titulo-nombre Valor a pagar final
-						
+
 					ul.resultado
 						li.resultado__item
 							p.resultado__nombre San Carlos de Apoquindo
@@ -377,6 +379,286 @@ body
 							span.resultado__icon.icon-Combined-Shape
 							p.resultado__final $1.500.000
 							
-					
+	section.seguros-adicionales
+		.container
+			.row
+				.col-xs-8
+					.titulo
+						span.titulo__icon.icon-avion
+						h2.titulo__name paso 3
+							span.titulo__descripcion selecciona otros seguros adicionales
+						.auxiliares
+							span.auxiliares__icon.icon-info
+							span.auxiliares__icon.icon-audio
+				.col-xs-8
+					article.seguro
+						.seguro__detalle
+							.seguro__grafica
+								span.seguro__icon.icon-dental
+								.seguro__chart
+									// gráfico
+							.seguro__info
+								h4.seguro__titulo seguro dental
+								p.seguro__text Sabemos lo importante que es la salud dental para tus hijos y como tienes un beneficiario de 5 años, te recomendamos agregar este seguro.
+								p.seguro__footer Selecciona % de cobertura
+								span.seguro__accion 30%
+								span.seguro__accion.seguro__accion--active 50%
+								span.seguro__accion 70%
+							.auxiliares
+								span.auxiliares__icon.icon-info
+								span.auxiliares__icon.icon-audio
+						.seguro__beneficios
+							ul.seguro__lista
+								li.seguro__item
+									.checkbox
+										input#uno(type='checkbox', name='si', value='')
+										label(for='uno')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#dos(type='checkbox', name='si', value='')
+										label(for='dos')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#tres(type='checkbox', name='si', value='')
+										label(for='tres')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#cuatro(type='checkbox', name='si', value='')
+										label(for='cuatro')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+							ul.seguro__lista
+								li.seguro__item
+									.checkbox
+										input#cinco(type='checkbox', name='si', value='')
+										label(for='cinco')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#seis(type='checkbox', name='si', value='')
+										label(for='seis')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#siete(type='checkbox', name='si', value='')
+										label(for='siete')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.seguro__check-detalle
+										p.seguro__nombre.seguro__nombre--total Total :
+											span 0,40 UF/mes
+						span.seguro__close.icon-cerrar
+				.col-xs-8
+					article.seguro.u-asistencia
+						.seguro__detalle
+							.seguro__grafica
+								span.seguro__icon.icon-asistencia
+								.seguro__chart
+									// gráfico
+							.seguro__info
+								h4.seguro__titulo seguro asistencia
+								p.seguro__text Sabemos lo importante que es la salud dental para tus hijos y como tienes un beneficiario de 5 años, te recomendamos agregar este seguro.
+								p.seguro__footer Selecciona % de cobertura
+								span.seguro__accion.u-info simple
+									span 0,13 uf
+								span.seguro__accion.u-info.seguro__accion--active ampliada
+									span 0,13 uf
+								span.seguro__accion.u-info proteccion
+									span 0,13 uf
+							.auxiliares
+								span.auxiliares__icon.icon-info
+								span.auxiliares__icon.icon-audio
+						.seguro__beneficios
+							ul.seguro__lista
+								li.seguro__item
+									.checkbox
+										input#uno(type='checkbox', name='si', value='')
+										label(for='uno')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#dos(type='checkbox', name='si', value='')
+										label(for='dos')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#tres(type='checkbox', name='si', value='')
+										label(for='tres')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#cuatro(type='checkbox', name='si', value='')
+										label(for='cuatro')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+							ul.seguro__lista
+								li.seguro__item
+									.checkbox
+										input#cinco(type='checkbox', name='si', value='')
+										label(for='cinco')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#seis(type='checkbox', name='si', value='')
+										label(for='seis')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#siete(type='checkbox', name='si', value='')
+										label(for='siete')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.seguro__check-detalle
+										p.seguro__nombre.seguro__nombre--total Total :
+											span 0,40 UF/mes
+						span.seguro__close.icon-cerrar
+				.col-xs-8
+					article.seguro.u-farmacia
+						.seguro__detalle
+							.seguro__grafica
+								span.seguro__icon.icon-farmacia
+								.seguro__chart
+									// gráfico
+							.seguro__info
+								h4.seguro__titulo seguro farmacia
+								p.seguro__text Sabemos lo importante que es la salud dental para tus hijos y como tienes un beneficiario de 5 años, te recomendamos agregar este seguro.
+								p.seguro__footer Selecciona % de cobertura
+								span.seguro__accion 30%
+								span.seguro__accion.seguro__accion--active 50%
+								span.seguro__accion 70%
+							.auxiliares
+								span.auxiliares__icon.icon-info
+								span.auxiliares__icon.icon-audio
+						.seguro__beneficios
+							ul.seguro__lista
+								li.seguro__item
+									.checkbox
+										input#uno(type='checkbox', name='si', value='')
+										label(for='uno')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#dos(type='checkbox', name='si', value='')
+										label(for='dos')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#tres(type='checkbox', name='si', value='')
+										label(for='tres')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#cuatro(type='checkbox', name='si', value='')
+										label(for='cuatro')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+							ul.seguro__lista
+								li.seguro__item
+									.checkbox
+										input#cinco(type='checkbox', name='si', value='')
+										label(for='cinco')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#seis(type='checkbox', name='si', value='')
+										label(for='seis')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.checkbox
+										input#siete(type='checkbox', name='si', value='')
+										label(for='siete')
+											span
+									.seguro__check-detalle
+										span.seguro__user.icon-mujer
+										p.seguro__nombre Titular
+											span 0,02 UF/mes
+								li.seguro__item
+									.seguro__check-detalle
+										p.seguro__nombre.seguro__nombre--total Total :
+											span 0,40 UF/mes
+						span.seguro__close.icon-cerrar
+								
+
+
 
 	include templates/footer

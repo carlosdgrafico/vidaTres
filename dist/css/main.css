@@ -1048,29 +1048,28 @@ por ahora esta con un hover para poder visualizar el efecto.
 /* line 1, app/scss/componentes/buscador.scss */
 .buscador {
   background-color: rgba(38, 98, 193, 0.2);
-  border: 1px solid red;
   padding: 4em 0;
   margin-top: 3em;
   overflow: hidden; }
-  /* line 8, app/scss/componentes/buscador.scss */
+  /* line 7, app/scss/componentes/buscador.scss */
   .buscador .titulo__descripcion {
     font-weight: 600; }
 
-/* line 13, app/scss/componentes/buscador.scss */
+/* line 12, app/scss/componentes/buscador.scss */
 .filtro {
   display: inline-block;
   vertical-align: middle; }
-  /* line 16, app/scss/componentes/buscador.scss */
+  /* line 15, app/scss/componentes/buscador.scss */
   .filtro .checkbox {
     display: inline-block;
     margin: .3em 0;
     width: 100%; }
 
-/* line 23, app/scss/componentes/buscador.scss */
+/* line 22, app/scss/componentes/buscador.scss */
 .buscador__campo {
   display: inline-block;
   position: relative; }
-  /* line 28, app/scss/componentes/buscador.scss */
+  /* line 27, app/scss/componentes/buscador.scss */
   .buscador__campo input {
     background-color: transparent;
     border: 1px solid #0836C0;
@@ -1079,20 +1078,20 @@ por ahora esta con un hover para poder visualizar el efecto.
     padding: 1em;
     position: relative;
     width: 360px; }
-  /* line 38, app/scss/componentes/buscador.scss */
+  /* line 37, app/scss/componentes/buscador.scss */
   .buscador__campo input::-webkit-input-placeholder {
     color: #0836C0;
     font-weight: 600; }
-  /* line 42, app/scss/componentes/buscador.scss */
+  /* line 41, app/scss/componentes/buscador.scss */
   .buscador__campo input:-moz-placeholder {
     color: #0836C0;
     font-weight: 600; }
-  /* line 46, app/scss/componentes/buscador.scss */
+  /* line 45, app/scss/componentes/buscador.scss */
   .buscador__campo input:-ms-input-placeholder {
     color: #0836C0;
     font-weight: 600; }
 
-/* line 52, app/scss/componentes/buscador.scss */
+/* line 51, app/scss/componentes/buscador.scss */
 .buscador__icon {
   color: #0836C0;
   font-size: 28px;
@@ -1101,7 +1100,7 @@ por ahora esta con un hover para poder visualizar el efecto.
   top: .5em;
   right: 1em; }
 
-/* line 61, app/scss/componentes/buscador.scss */
+/* line 60, app/scss/componentes/buscador.scss */
 .buscador__titulos {
   color: #0836C0;
   display: flex;
@@ -1111,14 +1110,14 @@ por ahora esta con un hover para poder visualizar el efecto.
   margin: 4em 0 1em 0;
   justify-content: space-around; }
 
-/* line 70, app/scss/componentes/buscador.scss */
+/* line 69, app/scss/componentes/buscador.scss */
 .buscador__titulo {
   text-align: center; }
-  /* line 72, app/scss/componentes/buscador.scss */
+  /* line 71, app/scss/componentes/buscador.scss */
   .buscador__titulo:first-child {
     visibility: hidden; }
 
-/* line 77, app/scss/componentes/buscador.scss */
+/* line 76, app/scss/componentes/buscador.scss */
 .buscador__titulo-icon {
   display: block;
   background-color: rgba(255, 255, 255, 0);
@@ -1134,17 +1133,17 @@ por ahora esta con un hover para poder visualizar el efecto.
   text-align: center;
   transition: all .3s ease-out;
   width: 35px; }
-  /* line 91, app/scss/componentes/buscador.scss */
+  /* line 90, app/scss/componentes/buscador.scss */
   .buscador__titulo-icon:hover {
     background-color: #0836C0;
     color: #fff; }
 
-/* line 97, app/scss/componentes/buscador.scss */
+/* line 96, app/scss/componentes/buscador.scss */
 .resultado {
   color: #0836C0;
   max-height: 320px;
   overflow-y: scroll; }
-  /* line 102, app/scss/componentes/buscador.scss */
+  /* line 101, app/scss/componentes/buscador.scss */
   .resultado__item {
     border: 1px solid #0836C0;
     border-radius: 7px;
@@ -1159,22 +1158,22 @@ por ahora esta con un hover para poder visualizar el efecto.
     margin-top: .5em;
     overflow: hidden;
     width: 100%; }
-  /* line 116, app/scss/componentes/buscador.scss */
+  /* line 115, app/scss/componentes/buscador.scss */
   .resultado__nombre, .resultado__bonificacion-copago, .resultado__final {
     font-size: 16px;
     font-size: 1rem;
     font-weight: 600; }
-  /* line 121, app/scss/componentes/buscador.scss */
+  /* line 120, app/scss/componentes/buscador.scss */
   .resultado__nombre {
     max-width: 150px;
     text-align: center; }
-  /* line 126, app/scss/componentes/buscador.scss */
+  /* line 125, app/scss/componentes/buscador.scss */
   .resultado__bonificacion-copago {
     color: #fff; }
-  /* line 130, app/scss/componentes/buscador.scss */
+  /* line 129, app/scss/componentes/buscador.scss */
   .resultado__icon {
     color: #01A567; }
-  /* line 134, app/scss/componentes/buscador.scss */
+  /* line 133, app/scss/componentes/buscador.scss */
   .resultado__final {
     background-color: #0836C0;
     color: #fff;
@@ -1183,5 +1182,188 @@ por ahora esta con un hover para poder visualizar el efecto.
     margin-right: -10px;
     text-align: center;
     width: 170px; }
+
+/* line 1, app/scss/componentes/seguros.scss */
+.seguros-adicionales {
+  background-color: #F6F6F6;
+  padding: 4em 0 6em 0; }
+
+/* line 7, app/scss/componentes/seguros.scss */
+.seguro {
+  background-color: #EBEBEB;
+  border-radius: 7px;
+  color: #0836C0;
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 14px;
+  line-height: 0.875rem;
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  overflow: hidden; }
+  /* line 18, app/scss/componentes/seguros.scss */
+  .seguro__detalle {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2em;
+    position: relative;
+    width: 50%; }
+    /* line 26, app/scss/componentes/seguros.scss */
+    .seguro__detalle .auxiliares {
+      top: 1em;
+      right: 1em; }
+  /* line 32, app/scss/componentes/seguros.scss */
+  .seguro__grafica {
+    margin-right: 1em; }
+  /* line 37, app/scss/componentes/seguros.scss */
+  .seguro__icon {
+    background-color: #0836C0;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    font-size: 1.875rem;
+    height: 70px;
+    margin-bottom: .5em;
+    line-height: 70px;
+    text-align: center;
+    width: 70px; }
+  /* line 50, app/scss/componentes/seguros.scss */
+  .seguro__chart {
+    border: 1px solid red;
+    height: 70px;
+    width: 70px; }
+  /* line 56, app/scss/componentes/seguros.scss */
+  .seguro__info {
+    text-align: left; }
+  /* line 60, app/scss/componentes/seguros.scss */
+  .seguro__titulo {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase; }
+  /* line 66, app/scss/componentes/seguros.scss */
+  .seguro__text {
+    color: #8B8B8B;
+    margin: .5em 0 1em 0; }
+  /* line 71, app/scss/componentes/seguros.scss */
+  .seguro__footer {
+    font-weight: 600;
+    margin: 1em 0; }
+  /* line 76, app/scss/componentes/seguros.scss */
+  .seguro__accion {
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    color: #000;
+    display: inline-block;
+    font-size: 12px;
+    font-size: 0.75rem;
+    height: 40px;
+    margin-right: .5em;
+    line-height: 40px;
+    text-align: center;
+    transition: all .3s ease-out;
+    width: 40px; }
+    /* line 89, app/scss/componentes/seguros.scss */
+    .seguro__accion:hover {
+      background-color: #C0C8D2; }
+  /* line 94, app/scss/componentes/seguros.scss */
+  .seguro__accion--active {
+    background-color: #0836C0;
+    color: #fff; }
+    /* line 97, app/scss/componentes/seguros.scss */
+    .seguro__accion--active:hover {
+      background-color: #0836C0;
+      color: #fff; }
+  /* line 105, app/scss/componentes/seguros.scss */
+  .seguro__beneficios {
+    overflow: hidden;
+    background-color: #fff;
+    width: 50%; }
+  /* line 111, app/scss/componentes/seguros.scss */
+  .seguro__lista {
+    display: inline-block;
+    height: 100%;
+    padding: 2.5em;
+    width: auto; }
+  /* line 118, app/scss/componentes/seguros.scss */
+  .seguro__item {
+    display: flex;
+    margin-top: 1em; }
+    /* line 122, app/scss/componentes/seguros.scss */
+    .seguro__item .checkbox {
+      margin: 0 .5em 0 0; }
+  /* line 127, app/scss/componentes/seguros.scss */
+  .seguro__user {
+    font-size: 24px;
+    font-size: 1.5rem; }
+  /* line 131, app/scss/componentes/seguros.scss */
+  .seguro__nombre {
+    display: inline-block;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-left: .5em; }
+    /* line 136, app/scss/componentes/seguros.scss */
+    .seguro__nombre span {
+      display: block;
+      font-size: 10px;
+      font-size: 0.625rem;
+      font-weight: 400; }
+  /* line 143, app/scss/componentes/seguros.scss */
+  .seguro__nombre--total {
+    margin: 1em 0 0 0; }
+    /* line 145, app/scss/componentes/seguros.scss */
+    .seguro__nombre--total span {
+      display: inline-block;
+      margin-left: .3em; }
+  /* line 152, app/scss/componentes/seguros.scss */
+  .seguro__close {
+    border: 1px solid #D8D6D6;
+    border-radius: 50%;
+    color: #D8D6D6;
+    display: inline-block;
+    height: 20px;
+    font-size: 8px;
+    font-size: 0.5rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    position: absolute;
+    top: 1.5em;
+    right: 3em;
+    text-align: center;
+    width: 20px; }
+
+/* line 174, app/scss/componentes/seguros.scss */
+.u-asistencia .icon-asistencia {
+  background-color: #E8403C; }
+
+/* line 178, app/scss/componentes/seguros.scss */
+.u-asistencia .seguro__accion--active {
+  background-color: #E8403C; }
+
+/* line 182, app/scss/componentes/seguros.scss */
+.u-asistencia .u-info {
+  border-radius: 20px;
+  font-size: 8px;
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 70px; }
+  /* line 188, app/scss/componentes/seguros.scss */
+  .u-asistencia .u-info span {
+    display: block;
+    font-weight: 400;
+    margin-top: -10px;
+    line-height: 0px; }
+
+/* line 199, app/scss/componentes/seguros.scss */
+.u-farmacia .icon-farmacia {
+  background-color: #01A567; }
+
+/* line 203, app/scss/componentes/seguros.scss */
+.u-farmacia .seguro__accion--active {
+  background-color: #01A567; }
 
 /* CLASES DE AYUDA - SIEMPRE AL FINAL */

@@ -104,6 +104,109 @@ body
 									.col-xs-5.col-xs-offset-6
 										figure.red__clinica
 											img(src="./img/integramedica.png", alt="Logotipo clinica")
+												
+		.plan
+			.plan__header
+				.plan__info
+					p.plan__nombre-plan Mi Plan C-01
+					p.plan__cliente Camila 
+						span Aravena
+					p.plan__saldo $1.250.000
+					p.plan__locacion Región Metropolitana
+					p.plan__edad 45 años
+				.plan__action
+					span.plan__edit.icon-edit
+					.plan__beneficiarios
+						span.plan__beneficiarios-icon.icon-hombre
+						span.plan__beneficiarios-icon.icon-mujer
+						a.plan__beneficiarios-link(href="javascript:;") 5 Beneficiarios
+						
+			.plan__body
+				.plan__prestadores
+					p.plan__prestadores-titulo Prestadores
+					.plan__add
+						p.plan__red Red Premium
+						p.plan__red Red Plus
+					span.plan__close.icon-cerrar
+						
+				.plan__cobertura
+					.plan__chart
+						p.plan__chart-titulo Cobertura
+							span ambulatoria
+						.plan__chart-detalle
+							// aqui va el gráfico
+						span.plan__close.icon-cerrar
+					.plan__chart
+						p.plan__chart-titulo Cobertura
+							span hospilataria
+						.plan__chart-detalle
+							// aqui va el gráfico
+						span.plan__close.icon-cerrar
+						
+				.plan__productos
+					.plan__seguro
+						p.plan__productos-titulo Seguro copago
+						span.plan__uf 30 uf
+						span.plan__close.icon-cerrar
+					.plan__adicionales
+						p.plan__productos-titulo Productos adicionales
+						.plan__adicionales-productos
+							.plan__icon.icon-asistencia
+							.plan__icon.icon-dental
+							.plan__icon.icon-farmacia
+						span.plan__edit.icon-edit
+							
+				ul.plan__valores
+					li.plan__valores-item
+						p.plan__valor-nombre
+							span.icon-Combined-Shape
+							| Valor Plan
+						p.plan__monto
+							| 3,5 uf/ mes
+							span.icon-info
+					li.plan__valores-item
+						p.plan__valor-nombre
+							span.icon-Combined-Shape
+							| Valor Copago
+						p.plan__monto
+							| 0,5 uf/ mes
+							span.icon-info
+					li.plan__valores-item
+						p.plan__valor-nombre
+							span.icon-Combined-Shape
+							| Valor Ges
+						p.plan__monto
+							| 0,3 uf/ mes
+							span.icon-info
+					li.plan__valores-item
+						p.plan__valor-nombre
+							span.icon-Combined-Shape
+							| Valor Productos adicionales
+						p.plan__monto
+							| 0,0 uf/ mes
+							span.icon-info
+								
+			.plan__footer
+				p.plan__total-titulo Valor total
+				p.plan__total-saldo $160.000
+					span 5 uf/mes
+						
+				.bar
+					.bar__progreso
+						p.bar__progreso-info bar__actual $130.000 - 4,5 uf
+						p.bar__progreso-info bar__adicional $30.000 - 0,5 uf
+					.bar__info
+						p.bar__titulo Tu 7%
+						p.bar__titulo Adicional
+						
+				span.plan__help.icon-audio
+				a.plan__link(href="javascript:;") ver mi plan
+				
+				
+							
+					
+				
+												
 			
 	include templates/footer
 

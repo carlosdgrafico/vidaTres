@@ -1,0 +1,234 @@
+.plan{
+   border: 1px solid red;
+   max-width: 420px;
+   position: relative;
+
+   &__header{
+      background-color: $primary-color;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      @include font-size(14);
+      @include line-height(19);
+      padding: 1em;
+      position: relative;
+   }
+
+   &__cliente{
+      @include font-size(26);
+      @include line-height(30);
+      font-weight: 600;
+      margin: .5em 0;
+      span{
+         display: block;
+      }
+   }
+
+   &__saldo{
+      font-weight: 600;
+   }
+
+   &__edit{
+      @include font-size(22);
+   }
+
+   &__beneficiarios{
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+   }
+
+   &__beneficiarios-icon{
+      @include font-size(30);
+      margin-left: .5em;
+   }
+
+   &__beneficiarios-link{
+      color: #fff;
+      display: block;
+      @include font-size(12);
+      text-decoration: none;
+
+      &:hover{
+         color: #fff;
+         opacity: .7;
+      }
+   }
+
+
+   &__body{
+      background-color: #fff;
+      color: $primary-color;
+      @include font-size(12);
+      @include line-height(16);
+   }
+
+   &__prestadores{
+      border-bottom: 1px solid #EFEFEF;
+      @include font-size(14);
+      @include line-height(20);
+      font-weight: 600;
+      padding: 1em;
+      position: relative;
+   }
+
+   &__prestadores-titulo{
+      display: inline-block;
+      margin-right: 2em;
+      vertical-align: top;
+   }
+
+   &__add{
+      display: inline-block;
+      vertical-align: top;
+   }
+
+   &__red{
+      position: relative;
+
+      &:before{
+         background-color: $primary-color;
+         border-radius: 50%;
+         content: '';
+         display: inline-block;
+         margin-right: .5em;
+         height: 5px;
+         width: 5px;
+      }
+   }
+
+   &__close{
+      border: 1px solid #D8D6D6;
+      border-radius: 50%;
+      color: #D8D6D6;
+      display: inline-block;
+      height: 20px;
+      @include font-size(8);
+      @include line-height(20);
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      text-align: center;
+      width: 20px;
+   }
+
+
+   &__cobertura{
+      border-bottom: 1px solid #EFEFEF;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__chart{
+      // border: 1px solid olive;
+      padding: 1em;
+      position: relative;
+      width: 50%;
+   }
+
+   &__chart-titulo{
+      font-weight: 600;
+      text-align: center;
+      span{
+         display: block;
+      }
+   }
+
+   &__productos{
+      border-bottom: 1px solid #EFEFEF;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__seguro, &__adicionales{
+      padding: 1em;
+      position: relative;
+      text-align: center;
+      width: 50%;
+   }
+
+   &__productos-titulo{
+      font-weight: 600;
+   }
+
+   &__uf{
+      border: 1px solid $primary-color;
+      border-radius: 20px;
+      color: $primary-color;
+      display: inline-block;
+      @include font-size(16);
+      font-weight: 700;
+      margin: 1em 0 0 0 ;
+      padding: .5em 1em;
+      text-transform: uppercase;
+   }
+
+   &__adicionales{
+      background-color: #F6F6F6;
+      position: relative;
+   }
+
+   &__adicionales-productos{
+      display: flex;
+      justify-content: space-around;
+   }
+
+   &__icon{
+      background-color: $asistencia-color;
+      border-radius: 50%;
+      color: #fff;
+      @include font-size(18);
+      @include line-height(35);
+      height: 35px;
+      margin-top: 1.5em;
+      position: relative;
+      text-align: center;
+      width: 35px;
+
+      &:after{
+         content: "\e903";
+         border: 1px solid #D8D6D6;
+         border-radius: 50%;
+         color: #D8D6D6;
+         display: inline-block;
+         height: 16px;
+         @include font-size(7);
+         @include line-height(16);
+         position: absolute;
+         top: -10px;
+         right: -10px;
+         text-align: center;
+         width: 16px;
+      }
+   }
+
+   .icon-dental{
+      background-color: $dental-color;
+   }
+   .icon-farmacia{
+      background-color: $farmacia-color;
+   }
+
+   &__edit{
+      @include font-size(14);
+      position: absolute;
+      top: 1em;
+      right: 1em;
+   }
+
+   &__valores-item{
+      border-bottom: 1px solid #EFEFEF;
+      display: flex;
+      justify-content: space-between;
+      padding: .7em 1em;
+   }
+
+   &__valor-nombre{
+      span{
+         color: #01A567;
+         margin-right: 1em;
+      }
+   }
+
+
+}

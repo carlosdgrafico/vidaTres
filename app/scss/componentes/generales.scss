@@ -5,9 +5,19 @@
 }
 
 
-.container{
-   position: relative !important;
+.navegacion-fidex{
+   background-color: #fff;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+   position: fixed;
+   width: 100%;
+   z-index: 80;
+   padding-top: 2em ;
+
+   .titulo{
+      margin-bottom: 2em;
+   }
 }
+
 
 
   .checkbox {

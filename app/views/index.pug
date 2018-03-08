@@ -5,7 +5,35 @@ head
 	title vidaTres - step
 	include templates/head
 body
-	section.navegacion
+	
+	//- Esta navegación es para realizar una pruba de conceptos, los estilos estan en generales.scss
+	section.navegacion-fidex
+		.container
+			.row
+				.col-xs-1
+					figure.logotipo
+						img(src="./img/logotipo-vidatres.png", alt="")
+				.col-xs-7
+					.step
+						.step__linea
+						.step__paso
+							span.step__numero 1
+						.step__paso.step__paso--active
+							span.step__numero 2
+						.step__paso
+							span.step__numero 3
+						.step__paso
+							span.step__numero 4
+				.col-xs-8
+					.titulo
+						span.titulo__icon.icon-avion
+						h2.titulo__name paso 2
+							span.titulo__descripcion selecciona clinicas y coberturas
+
+						.auxiliares
+							span.auxiliares__icon.icon-info
+							span.auxiliares__icon.icon-audio
+								
 	section.plan-cliente
 		.container
 			.row
@@ -234,8 +262,7 @@ body
 								span.auxiliares__icon.icon-audio
 						.cobertura__chart
 							.cobertura__detalle
-								span grafico
-								// grafico
+								// gráfico
 							.cobertura__opciones
 								span.cobertura__opciones-item 50%
 								span.cobertura__opciones-item 70%

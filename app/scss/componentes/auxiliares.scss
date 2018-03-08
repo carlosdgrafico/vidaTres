@@ -1,11 +1,12 @@
 .auxiliares{
+   margin: 0;
    position: absolute;
    right: 0;
    bottom: 0;
 
    &__icon{
       display: inline-block;
-      background-color: #fff;
+      background-color: rgba(255,255,255,.0);
       border: 1px solid $primary-color;
       border-radius: 50%;
       color: $primary-color;
@@ -20,6 +21,20 @@
       &:hover{
          background-color: $primary-color;
          color: #fff;
+      }
+   }
+}
+
+
+.auxiliares--negativo{
+   .auxiliares__icon{
+      background-color: rgba(255,255,255,.0);
+      border: 1px solid #fff;
+      color: #fff;
+
+      &:hover{
+         background-color:  rgba(255,255,255,1);
+         color: $primary-color;
       }
    }
 }

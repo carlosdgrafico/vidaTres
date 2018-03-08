@@ -1,0 +1,82 @@
+// Estilos para la sección copago ..
+// los estilos de check, estan en generales es mejor dejarlos arriba y asi evitar conflictos
+.copago{
+   color: $primary-color;
+   font-weight: 600;
+
+   &__header{
+      position: relative;
+
+      .auxiliares{
+         top: -.5em;
+      }
+   }
+
+   &__titulo{
+      @include font-size(16);
+      @include line-height(20);
+      margin: 2em 0;
+   }
+
+   &__accion{
+      display: inline-block;
+      margin-right: 2em;
+      vertical-align: middle;
+      width: 15%;
+   }
+
+
+   .checkbox{
+      width: 100%;
+   }
+
+
+   &__opciones{
+      display: inline-block;
+      vertical-align: middle;
+      width: 80%;
+   }
+
+   &__opciones-item{
+      border: 1px solid $primary-color;
+      border-radius: 30px;
+      color: $primary-color;
+      @include font-size(18);
+      @include line-height(26);
+      font-weight: 700;
+      margin-left: 1em;
+      padding: .5em 1.5em;
+      text-transform: uppercase;
+
+      &:hover{
+         border: 1px solid #4C88D6;
+         color: $primary-color;
+      }
+
+   }
+
+   .copago__opciones-item--active{
+      background-color: #E8403C;
+      border: 1px solid  #E8403C;
+      color: #fff;
+   }
+
+
+   &__info{
+      border: 1px solid $primary-color;
+      border-radius: 7px;
+      margin-top: 2em;
+      padding: 1em;
+      position: relative;
+
+      .auxiliares{
+         top: .7em;
+         right: 1em;
+      }
+   }
+
+   &__alert{
+      text-transform: uppercase;
+      text-align: center;
+   }
+}

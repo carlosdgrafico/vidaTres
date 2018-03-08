@@ -261,6 +261,43 @@ body
 									span 4.500 uf
 								.auxiliares
 									span.auxiliares__icon.icon-info
+	section.copago-maximo
+		.container
+			.row
+				.col-xs-8
+					figure.banner
+						img.banner__img(src="./img/banner.jpg", alt="imagen de profesionales")
+					.copago
+						.copago__header
+							p.copago__titulo ¿Quieres seleccionar un seguro de copago máximo hospitalario en tus redes?
+							.auxiliares
+								span.auxiliares__icon.icon-info
+								span.auxiliares__icon.icon-audio
+								
+						.copago__accion
+							.copago__check
+								.checkbox
+									input#si(type='checkbox', name='si', value='')
+									label(for='si')
+										span
+										| Si
+								.checkbox
+									input#no(type='checkbox', name='no', value='')
+									label(for='no')
+										span
+										| No
+										
+						.copago__opciones
+							a.copago__opciones-item(href="javascript:;" ) 30 uf
+							a.copago__opciones-item.copago__opciones-item--active(href="javascript:;" ) 40 uf
+							a.copago__opciones-item(href="javascript:;" ) 50 uf
+							a.copago__opciones-item(href="javascript:;" ) 75 uf
+							
+						.copago__info
+							p.copago__alert tope anual copago máximo hospitalario 6.500 uf
+							.auxiliares
+								span.auxiliares__icon.icon-info
+
 
 
 

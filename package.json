@@ -1,0 +1,23 @@
+{
+  "name": "vidaTres",
+  "version": "1.0.0",
+  "description": "desarrollo frontEnd",
+  "main": "index.js",
+  "repository": "git@github.com:carlosdgrafico/vidaTres.git",
+  "author": "carlosdgrafico <carlos.disenadorgrafico@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "3",
+    "chart.js": "^2.7.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,24 @@
+/*  BASE  */
+@import 'base/fuentes.scss';
+@import 'base/icon.scss';
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/inicializacion.scss';
+
+
+
+
+/* COMPONENETES */
+@import 'componentes/generales.scss';
+@import 'componentes/step.scss';
+@import 'componentes/red.scss';
+@import 'componentes/plan.scss';
+@import 'componentes/cobertura.scss';
+@import 'componentes/seguro.scss';
+@import 'componentes/chart.scss';
+
+
+
+
+/* CLASES DE AYUDA - SIEMPRE AL FINAL */
+@import 'componentes/helper.scss';

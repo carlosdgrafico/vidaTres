@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?f4cmtc');
+  src:  url('../fonts/icomoon.eot?f4cmtc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?f4cmtc') format('truetype'),
+    url('../fonts/icomoon.woff?f4cmtc') format('woff'),
+    url('../fonts/icomoon.svg?f4cmtc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-asistencia:before {
+  content: "\e900";
+}
+.icon-audio:before {
+  content: "\e901";
+}
+.icon-avion:before {
+  content: "\e902";
+}
+.icon-cerrar:before {
+  content: "\e903";
+}
+.icon-chat:before {
+  content: "\e904";
+}
+.icon-Combined-Shape:before {
+  content: "\e905";
+}
+.icon-dental:before {
+  content: "\e906";
+}
+.icon-edit:before {
+  content: "\e907";
+}
+.icon-farmacia:before {
+  content: "\e908";
+}
+.icon-hombre:before {
+  content: "\e909";
+}
+.icon-info:before {
+  content: "\e90a";
+}
+.icon-lupa:before {
+  content: "\e90b";
+}
+.icon-mujer:before {
+  content: "\e90c";
+}
+.icon-user:before {
+  content: "\e90d";
+}

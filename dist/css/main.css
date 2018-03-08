@@ -148,6 +148,10 @@ img {
   width: 100%; }
 
 /* line 8, app/scss/componentes/generales.scss */
+.container {
+  position: relative !important; }
+
+/* line 13, app/scss/componentes/generales.scss */
 .checkbox {
   display: inline-block;
   width: auto;
@@ -156,13 +160,13 @@ img {
   text-align: left;
   vertical-align: bottom; }
 
-/* line 18, app/scss/componentes/generales.scss */
+/* line 23, app/scss/componentes/generales.scss */
 label {
   display: inline-block;
   color: #0836C0;
   cursor: pointer;
   position: relative; }
-  /* line 26, app/scss/componentes/generales.scss */
+  /* line 31, app/scss/componentes/generales.scss */
   label span {
     display: inline-block;
     position: relative;
@@ -178,7 +182,7 @@ label {
     transition: background-color 150ms 200ms, -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
     transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
     transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89), -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89); }
-    /* line 41, app/scss/componentes/generales.scss */
+    /* line 46, app/scss/componentes/generales.scss */
     label span:before {
       content: "";
       width: 0px;
@@ -193,7 +197,7 @@ label {
       transition: width 50ms ease 50ms;
       -webkit-transform-origin: 0% 0%;
               transform-origin: 0% 0%; }
-    /* line 55, app/scss/componentes/generales.scss */
+    /* line 60, app/scss/componentes/generales.scss */
     label span:after {
       content: "";
       width: 0;
@@ -208,61 +212,65 @@ label {
       transition: width 50ms ease;
       -webkit-transform-origin: 0% 0%;
               transform-origin: 0% 0%; }
-  /* line 73, app/scss/componentes/generales.scss */
+  /* line 78, app/scss/componentes/generales.scss */
   label:hover span:before {
     width: 5px;
     transition: width 100ms ease; }
-  /* line 78, app/scss/componentes/generales.scss */
+  /* line 83, app/scss/componentes/generales.scss */
   label:hover span:after {
     width: 10px;
     transition: width 150ms ease 100ms; }
 
-/* line 86, app/scss/componentes/generales.scss */
+/* line 91, app/scss/componentes/generales.scss */
 input[type="checkbox"] {
   display: none; }
-  /* line 93, app/scss/componentes/generales.scss */
+  /* line 98, app/scss/componentes/generales.scss */
   input[type="checkbox"]:checked + label span {
     background-color: #fff;
     -webkit-transform: scale(1.15);
             transform: scale(1.15); }
-    /* line 97, app/scss/componentes/generales.scss */
+    /* line 102, app/scss/componentes/generales.scss */
     input[type="checkbox"]:checked + label span:after {
       width: 10px;
       background: #1790b5;
       transition: width 150ms ease 100ms; }
-    /* line 103, app/scss/componentes/generales.scss */
+    /* line 108, app/scss/componentes/generales.scss */
     input[type="checkbox"]:checked + label span:before {
       width: 5px;
       background: #1790b5;
       transition: width 150ms ease 100ms; }
-  /* line 111, app/scss/componentes/generales.scss */
+  /* line 116, app/scss/componentes/generales.scss */
   input[type="checkbox"]:checked + label:hover span {
     background-color: #fff;
     -webkit-transform: scale(1.15);
             transform: scale(1.15); }
-    /* line 115, app/scss/componentes/generales.scss */
+    /* line 120, app/scss/componentes/generales.scss */
     input[type="checkbox"]:checked + label:hover span:after {
       width: 10px;
       background: #1790b5;
       transition: width 150ms ease 100ms; }
-    /* line 121, app/scss/componentes/generales.scss */
+    /* line 126, app/scss/componentes/generales.scss */
     input[type="checkbox"]:checked + label:hover span:before {
       width: 5px;
       background: #1790b5;
       transition: width 150ms ease 100ms; }
 
-/* line 133, app/scss/componentes/generales.scss */
+/* line 138, app/scss/componentes/generales.scss */
 .checkbox label, .radio label {
   padding-left: 0 !important; }
 
 /* line 1, app/scss/componentes/step.scss */
+.u-fidex {
+  position: fixed !important; }
+
+/* line 5, app/scss/componentes/step.scss */
 .step {
   color: #000000;
   position: relative;
   text-align: center;
   width: 350px;
   /* Esta es la clase que se agrega para que cammbie de posicion el icon del avion */ }
-  /* line 7, app/scss/componentes/step.scss */
+  /* line 11, app/scss/componentes/step.scss */
   .step__linea {
     background-color: #0836C0;
     height: 2px;
@@ -273,7 +281,7 @@ input[type="checkbox"] {
     right: 0;
     width: 250px;
     z-index: -1; }
-  /* line 19, app/scss/componentes/step.scss */
+  /* line 23, app/scss/componentes/step.scss */
   .step__paso {
     background-color: #fff;
     border: 1px solid #0836C0;
@@ -285,19 +293,19 @@ input[type="checkbox"] {
     margin-right: 2em;
     text-align: center;
     width: 50px; }
-    /* line 29, app/scss/componentes/step.scss */
+    /* line 33, app/scss/componentes/step.scss */
     .step__paso:last-child {
       margin-right: 0; }
-  /* line 34, app/scss/componentes/step.scss */
+  /* line 38, app/scss/componentes/step.scss */
   .step__numero {
     font-size: 20px;
     font-size: 1.25rem;
     font-weight: 700; }
-  /* line 40, app/scss/componentes/step.scss */
+  /* line 44, app/scss/componentes/step.scss */
   .step__paso--active {
     background-color: #0836C0;
     position: relative; }
-    /* line 43, app/scss/componentes/step.scss */
+    /* line 47, app/scss/componentes/step.scss */
     .step__paso--active:before {
       content: "\e902";
       color: #fff;
@@ -308,7 +316,7 @@ input[type="checkbox"] {
       position: absolute;
       left: 0;
       right: 0; }
-    /* line 53, app/scss/componentes/step.scss */
+    /* line 57, app/scss/componentes/step.scss */
     .step__paso--active .step__numero {
       color: #0836C0; }
 
@@ -1284,41 +1292,42 @@ por ahora esta con un hover para poder visualizar el efecto.
   /* line 111, app/scss/componentes/seguros.scss */
   .seguro__lista {
     display: inline-block;
+    vertical-align: top;
     height: 100%;
     padding: 2.5em;
     width: auto; }
-  /* line 118, app/scss/componentes/seguros.scss */
+  /* line 119, app/scss/componentes/seguros.scss */
   .seguro__item {
     display: flex;
     margin-top: 1em; }
-    /* line 122, app/scss/componentes/seguros.scss */
+    /* line 123, app/scss/componentes/seguros.scss */
     .seguro__item .checkbox {
       margin: 0 .5em 0 0; }
-  /* line 127, app/scss/componentes/seguros.scss */
+  /* line 128, app/scss/componentes/seguros.scss */
   .seguro__user {
     font-size: 24px;
     font-size: 1.5rem; }
-  /* line 131, app/scss/componentes/seguros.scss */
+  /* line 132, app/scss/componentes/seguros.scss */
   .seguro__nombre {
     display: inline-block;
     font-size: 13px;
     font-size: 0.8125rem;
     font-weight: 600;
     margin-left: .5em; }
-    /* line 136, app/scss/componentes/seguros.scss */
+    /* line 137, app/scss/componentes/seguros.scss */
     .seguro__nombre span {
       display: block;
       font-size: 10px;
       font-size: 0.625rem;
       font-weight: 400; }
-  /* line 143, app/scss/componentes/seguros.scss */
+  /* line 144, app/scss/componentes/seguros.scss */
   .seguro__nombre--total {
     margin: 1em 0 0 0; }
-    /* line 145, app/scss/componentes/seguros.scss */
+    /* line 146, app/scss/componentes/seguros.scss */
     .seguro__nombre--total span {
       display: inline-block;
       margin-left: .3em; }
-  /* line 152, app/scss/componentes/seguros.scss */
+  /* line 153, app/scss/componentes/seguros.scss */
   .seguro__close {
     border: 1px solid #D8D6D6;
     border-radius: 50%;
@@ -1335,15 +1344,15 @@ por ahora esta con un hover para poder visualizar el efecto.
     text-align: center;
     width: 20px; }
 
-/* line 174, app/scss/componentes/seguros.scss */
+/* line 175, app/scss/componentes/seguros.scss */
 .u-asistencia .icon-asistencia {
   background-color: #E8403C; }
 
-/* line 178, app/scss/componentes/seguros.scss */
+/* line 179, app/scss/componentes/seguros.scss */
 .u-asistencia .seguro__accion--active {
   background-color: #E8403C; }
 
-/* line 182, app/scss/componentes/seguros.scss */
+/* line 183, app/scss/componentes/seguros.scss */
 .u-asistencia .u-info {
   border-radius: 20px;
   font-size: 8px;
@@ -1351,18 +1360,18 @@ por ahora esta con un hover para poder visualizar el efecto.
   font-weight: 600;
   text-transform: uppercase;
   width: 70px; }
-  /* line 188, app/scss/componentes/seguros.scss */
+  /* line 189, app/scss/componentes/seguros.scss */
   .u-asistencia .u-info span {
     display: block;
     font-weight: 400;
     margin-top: -10px;
     line-height: 0px; }
 
-/* line 199, app/scss/componentes/seguros.scss */
+/* line 200, app/scss/componentes/seguros.scss */
 .u-farmacia .icon-farmacia {
   background-color: #01A567; }
 
-/* line 203, app/scss/componentes/seguros.scss */
+/* line 204, app/scss/componentes/seguros.scss */
 .u-farmacia .seguro__accion--active {
   background-color: #01A567; }
 

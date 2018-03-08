@@ -1,0 +1,75 @@
+.red{
+   background-color: #fff;
+   margin: 2em 0 0 0;
+
+   &__container{
+      border-radius: 10px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+      overflow: hidden;
+   }
+
+   &__header{
+      background-color: $primary-color;
+      color: #fff;
+      padding: 1em;
+   }
+
+   &__titulo{
+      @include font-size(16);
+      @include line-height(22);
+      margin: 0;
+   }
+
+   &__body{
+      display: flex;
+      justify-content: center;
+      padding: 3em 0;
+   }
+
+   &__clinica{
+      max-width: 150px;
+   }
+
+   &__footer{
+      background-color: #EFEFEF;
+      padding: 1em;
+
+      .red__clinica{
+         max-width: 120px;
+
+         &--vi{
+            margin-top: .3em;
+         }
+      }
+   }
+
+   /* Esta es la clase que se agrega cuando el usaurio selecciona */
+   &--active{
+      position: relative;
+
+      .red__container{
+         border: 2px solid #01A567;
+      }
+
+      .red__header{
+         background-color: #01A567;
+      }
+
+      &:before{
+         background-color: #fff;
+         border: 2px solid #01A567;
+         border-radius: 50%;
+         content: "\e905";
+         color: #01A567;
+         font-family: 'icomoon';
+         @include font-size(16);
+         @include line-height(40);
+         height: 40px;
+         position: absolute;
+         top: -1em;
+         right: -1em;
+         width: 40px;
+         text-align: center;
+      }
+   }
+}

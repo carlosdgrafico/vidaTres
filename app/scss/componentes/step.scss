@@ -36,6 +36,7 @@
       font-weight: 700;
    }
 
+   /* Esta es la clase que se agrega para que cammbie de posicion el icon del avion */
    &__paso--active{
       background-color: $primary-color;
       position: relative;

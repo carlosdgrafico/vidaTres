@@ -1,0 +1,57 @@
+.step{
+   color: $text-color;
+   position: relative;
+   text-align: center;
+   width: 400px;
+
+   &__linea{
+      background-color: $primary-color;
+      height: 2px;
+      margin: 0 auto;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: 0;
+      width: 250px;
+      z-index: -1;
+   }
+
+   &__paso{
+      background-color: #fff;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      display: inline-block;
+      height: 50px;
+      @include line-height(50);
+      margin-right: 2em;
+      text-align: center;
+      width: 50px;
+      &:last-child{
+         margin-right: 0;
+      }
+   }
+
+   &__numero{
+      @include font-size(20);
+      font-weight: 700;
+   }
+
+   &__paso--active{
+      background-color: $primary-color;
+      position: relative;
+      &:before{
+         content: "\e902";
+         color: #fff;
+         font-family: 'icomoon';
+         @include font-size(24);
+         margin: 0 auto;
+         position: absolute;
+         left: 0;
+         right: 0;
+      }
+      .step__numero{
+         color: $primary-color;
+      }
+
+   }
+}

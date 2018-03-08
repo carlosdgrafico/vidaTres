@@ -5,7 +5,29 @@ head
 	title vidaTres - step
 	include templates/head
 body
-	h1 vida tres inicial
+	
+	.container
+		.row
+			.col-xs-1
+				figure.logotipo
+					img(src="./img/logotipo-vidatres.png", alt="")
+			.col-xs-8
+				.step
+					.step__linea
+					.step__paso
+						span.step__numero 1
+					.step__paso.step__paso--active
+						span.step__numero 2
+					.step__paso
+						span.step__numero 3
+					.step__paso
+						span.step__numero 4
+			.col-xs-8
+				.titulo
+					span.titulo__icon.icon-avion
+					h2.titulo__name paso 2
+						span.titulo__descripcion selecciona clinicas y coberturas
+			
 	include templates/footer
 
 	

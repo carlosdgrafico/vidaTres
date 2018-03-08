@@ -1,0 +1,167 @@
+.seleccion-cobertura{
+   background-color: rgba(38, 98, 193, .2);
+   margin: 2em 0;
+   padding: 6em 0;
+}
+
+
+.cobertura{
+   &__header{
+      background-color: $primary-color;
+      border-radius: 7px;
+      color: #fff;
+      @include font-size(14);
+      @include line-height(19);
+      font-weight: 600;
+      padding: 1.2em;
+   }
+
+   .auxiliares{
+      background-color: red;
+      top: .5em;
+      right: 2em;
+      height: 0;
+      &__icon{
+         background-color: $primary-color;
+         border: 1px solid #fff;
+         color: #fff;
+         &:hover{
+            background-color: #fff;
+            color: $primary-color;
+         }
+      }
+   }
+
+   &__chart{
+      text-align: center;
+      margin-top: 2em;
+   }
+
+   &__detalle, &__opciones{
+      display: inline-block;
+      vertical-align: top;
+   }
+
+   &__detalle{
+      border: 1px solid olive;
+      width: 130px;
+      height: 130px;
+   }
+
+   &__opciones{
+      width: 40%;
+      &:last-child{
+         width: 50%;
+      }
+   }
+
+   &__opciones-item{
+      background-color: #fff;
+      border-radius: 50%;
+      color: $primary-color;
+      display: inline-block;
+      @include font-size(15);
+      @include line-height(44);
+      font-weight: 400;
+      height: 44px;
+      margin: .5em;
+      overflow: hidden;
+      text-align: center;
+      transition: all .3s ease-out;
+      width: 44px;
+
+      &:hover{
+         font-weight: 700;
+      }
+
+      &--active{
+         background-color: #E8403C;
+         color: #fff;
+         font-weight: 700;
+      }
+   }
+}
+
+.informativo{
+   color: $primary-color;
+   @include font-size(16);
+   @include line-height(22);
+   margin: 4em 0 0 0;
+
+   &__titulo{
+      font-weight: 600;
+   }
+
+   &__container{
+      background-color: rgba(38, 98, 193, .1);
+      border: 1px solid $primary-color;
+      border-radius: 7px;
+      display: flex;
+      font-weight: 600;
+      justify-content: space-between;
+      margin-top: 1em;
+      overflow: hidden;
+      //padding: 1em;
+   }
+
+   &__cobertura, &__tope{
+      border-right: 1px solid $primary-color;
+      padding: 1.5em;
+      position: relative;
+      text-align: left;
+      width: 60%;
+   }
+
+   &__tope{
+      border: none;
+      text-align: center;
+      width: 40%;
+   }
+
+   &__cobertura-titulo, &__tope-titulo{
+      @include font-size(18);
+      text-transform: uppercase;
+      span{
+         display: block;
+         margin: 0;
+      }
+   }
+
+   &__tope-titulo{
+      margin-top: 2em;
+   }
+
+   &__item{
+      font-weight: 400;
+      margin-top: 1.2em;
+      width: 80%;
+   }
+
+   &__porcentaje{
+      background-color: #fff;
+      border-radius: 50%;
+      color: $primary-color;
+      display: inline-block;
+      @include font-size(13);
+      @include line-height(35);
+      font-weight: 700;
+      float: right;
+      height: 35px;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+      width: 35px;
+   }
+
+   .auxiliares{
+      top: 1em;
+      right: 1em;
+
+      &__icon{
+         background-color: transparent;
+         &:hover{
+            background-color: $primary-color;
+         }
+      }
+   }
+}

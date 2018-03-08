@@ -27,7 +27,7 @@ body
 						span.titulo__icon.icon-avion
 						h2.titulo__name paso 2
 							span.titulo__descripcion selecciona clinicas y coberturas
-						
+
 						.auxiliares
 							span.auxiliares__icon.icon-info
 							span.auxiliares__icon.icon-audio
@@ -105,7 +105,8 @@ body
 									.col-xs-5.col-xs-offset-6
 										figure.red__clinica
 											img(src="./img/integramedica.png", alt="Logotipo clinica")
-												
+
+		//- Esta es la vista de usuario que esta fija en toda la navegación										
 		.plan
 			.plan__header
 				.plan__info
@@ -121,7 +122,7 @@ body
 						span.plan__beneficiarios-icon.icon-hombre
 						span.plan__beneficiarios-icon.icon-mujer
 						a.plan__beneficiarios-link(href="javascript:;") 5 Beneficiarios
-						
+
 			.plan__body
 				.plan__prestadores
 					p.plan__prestadores-titulo Prestadores
@@ -129,7 +130,7 @@ body
 						p.plan__red Red Premium
 						p.plan__red Red Plus
 					span.plan__close.icon-cerrar
-						
+
 				.plan__cobertura
 					.plan__chart
 						p.plan__chart-titulo Cobertura
@@ -143,7 +144,7 @@ body
 						.plan__chart-detalle
 							// aqui va el gráfico
 						span.plan__close.icon-cerrar
-						
+
 				.plan__productos
 					.plan__seguro
 						p.plan__productos-titulo Seguro copago
@@ -156,7 +157,7 @@ body
 							.plan__icon.icon-dental
 							.plan__icon.icon-farmacia
 						span.plan__edit-productos.icon-edit
-							
+
 				ul.plan__valores
 					li.plan__valores-item
 						p.plan__valor-nombre
@@ -186,12 +187,12 @@ body
 						p.plan__monto
 							| 0,0 uf/ mes
 							span.icon-info
-								
+
 			.plan__footer
 				p.plan__total-titulo Valor total
 				p.plan__total-saldo $160.000
 					span 5 UF/mes
-						
+
 				.bar.bar--active
 					.bar__progreso
 						p.bar__progreso-info $130.000 - 4,5 uf
@@ -199,13 +200,72 @@ body
 					.bar__info
 						p.bar__titulo Tu 7%
 						p.bar__titulo Adicional
-						
+
 				span.plan__help.icon-audio
 			a.plan__link(href="javascript:;") ver mi plan
-				
-													
-			
-	include templates/footer
 
-	
-	
+	section.seleccion-cobertura
+		.container
+			.row
+				.col-xs-4
+					article.cobertura
+						.cobertura__header
+							p.cobertura__titulo Cobertura ambulatoria y urgencia
+							.auxiliares
+								span.auxiliares__icon.icon-info
+								span.auxiliares__icon.icon-audio
+						.cobertura__chart
+							.cobertura__detalle
+								span grafico
+								// grafico
+							.cobertura__opciones
+								span.cobertura__opciones-item.cobertura__opciones-item--active 50%
+								span.cobertura__opciones-item 70%
+								br
+								span.cobertura__opciones-item 60%
+								span.cobertura__opciones-item 80%
+				.col-xs-4
+					article.cobertura
+						.cobertura__header
+							p.cobertura__titulo Cobertura ambulatoria y urgencia
+							.auxiliares
+								span.auxiliares__icon.icon-info
+								span.auxiliares__icon.icon-audio
+						.cobertura__chart
+							.cobertura__detalle
+								span grafico
+								// grafico
+							.cobertura__opciones
+								span.cobertura__opciones-item 50%
+								span.cobertura__opciones-item 70%
+								span.cobertura__opciones-item 60%
+								span.cobertura__opciones-item 80%
+								span.cobertura__opciones-item 90%
+								span.cobertura__opciones-item 100%
+
+			.row
+				.col-xs-8
+					section.informativo
+						p.informativo__titulo Dada tus coberturas seleccionadas, tu libre elección es la siguiente:
+						.informativo__container
+							.informativo__cobertura
+								p.informativo__cobertura-titulo Libre elección
+								p.informativo__item Cobertura ambulatoria y urgencia
+									span.informativo__porcentaje 50%
+								p.informativo__item Cobertura hospitalaria
+									span.informativo__porcentaje 50%
+								.auxiliares
+									span.auxiliares__icon.icon-info
+							.informativo__tope
+								p.informativo__tope-titulo Tope anual plan 
+									span 4.500 uf
+								.auxiliares
+									span.auxiliares__icon.icon-info
+
+
+
+
+
+
+
+	include templates/footer

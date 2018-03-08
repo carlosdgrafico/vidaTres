@@ -1,0 +1,79 @@
+.bar{
+   &__progreso{
+      background-color: #FDB72B;
+      border-radius: 20px;
+      height: 30px;
+      @include font-size(12);
+      @include line-height(30);
+      padding: 0 1em;
+      position: relative;
+      transition: all .3s ease-out;
+      width: 100%;
+
+      &:after{
+         background-color: #4B89D6;
+         border-radius: 20px;
+         content:'';
+         display: inline-block;
+         height: 30px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         transition: all .3s ease-out;
+         width: 45%;
+         z-index: 10;
+      }
+   }
+
+
+   &__progreso-info{
+      font-weight: 600;
+      position: absolute;
+      top: 0;
+      left: 1.3em;
+      z-index: 11;
+      &:last-child{
+         left: inherit;
+         right: 1.3em;
+      }
+   }
+
+   &__info{
+      display: flex;
+      justify-content: space-between;
+      margin: .5em 0 0 0;
+      padding: 0 2em;
+   }
+
+   &__titulo{
+      @include font-size(12);
+      @include line-height(16);
+   }
+}
+
+
+
+
+
+/*
+La clase .bar--active es la que mueve la barra y cambia estilos
+por ahora esta con un hover para poder visualizar el efecto.
+*/
+
+//.bar--active{
+.bar:hover{
+
+   .bar__progreso{
+      background-color: #fff;
+   }
+
+   .bar__progreso:after{
+      width: 70%;
+   }
+
+   .bar__progreso-info:last-child{
+      color: #4B89D6;
+      left: inherit;
+      right: 1.3em;
+   }
+}

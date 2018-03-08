@@ -297,12 +297,86 @@ body
 							p.copago__alert tope anual copago máximo hospitalario 6.500 uf
 							.auxiliares
 								span.auxiliares__icon.icon-info
-
-
-
-
-
-
-
+	section.buscador
+		.container
+			.row
+				.col-xs-8
+					.titulo
+						span.titulo__descripcion ¿CUÁNTO PAGO POR PRESTACIÓN?
+						.auxiliares
+							span.auxiliares__icon.icon-info
+							span.auxiliares__icon.icon-audio
+				.col-xs-8
+					.filtro
+						.checkbox
+							input#ambulatoria(type='checkbox', name='si', value='')
+							label(for='ambulatoria')
+								span
+								| Ambulatoria y urgencia
+						.checkbox
+							input#hospitalaria(type='checkbox', name='no', value='')
+							label(for='hospitalaria')
+								span
+								| Hospitalaria
+					.buscador__campo
+						span.buscador__icon.icon-lupa
+						input(type="text", name="", placeholder="Buscar prestaciones")
+							
+				.col-xs-8
+					.buscador__titulos
+						.buscador__titulo
+							span.buscador__titulo-icon.icon-info
+							span.buscador__titulo-nombre Nombre clinica
+						.buscador__titulo
+							span.buscador__titulo-icon.icon-info
+							span.buscador__titulo-nombre Valor Clinica
+						.buscador__titulo
+							span.buscador__titulo-icon.icon-info
+							span.buscador__titulo-nombre Bonificación plan
+						.buscador__titulo
+							span.buscador__titulo-icon.icon-info
+							span.buscador__titulo-nombre Bonificación copago
+						.buscador__titulo
+							span.buscador__titulo-icon.icon-info
+							span.buscador__titulo-nombre Valor a pagar final
+						
+					ul.resultado
+						li.resultado__item
+							p.resultado__nombre San Carlos de Apoquindo
+							p.resultado__valor $60.000.000
+							p.resultado__bonificacion $54.000.000
+							p.resultado__bonificacion-copago $4.800.000
+							span.resultado__icon.icon-Combined-Shape
+							p.resultado__final $1.500.000
+						li.resultado__item
+							p.resultado__nombre San Carlos de Apoquindo
+							p.resultado__valor $60.000.000
+							p.resultado__bonificacion $54.000.000
+							p.resultado__bonificacion-copago $4.800.000
+							span.resultado__icon.icon-Combined-Shape
+							p.resultado__final $1.500.000
+						li.resultado__item
+							p.resultado__nombre San Carlos de Apoquindo
+							p.resultado__valor $60.000.000
+							p.resultado__bonificacion $54.000.000
+							p.resultado__bonificacion-copago $4.800.000
+							span.resultado__icon.icon-Combined-Shape
+							p.resultado__final $1.500.000
+						li.resultado__item
+							p.resultado__nombre San Carlos de Apoquindo
+							p.resultado__valor $60.000.000
+							p.resultado__bonificacion $54.000.000
+							p.resultado__bonificacion-copago $4.800.000
+							span.resultado__icon.icon-Combined-Shape
+							p.resultado__final $1.500.000
+						li.resultado__item
+							p.resultado__nombre San Carlos de Apoquindo
+							p.resultado__valor $60.000.000
+							p.resultado__bonificacion $54.000.000
+							p.resultado__bonificacion-copago $4.800.000
+							span.resultado__icon.icon-Combined-Shape
+							p.resultado__final $1.500.000
+							
+					
 
 	include templates/footer

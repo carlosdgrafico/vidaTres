@@ -1,5 +1,10 @@
 // Estilos para la sección copago ..
 // los estilos de check, estan en generales es mejor dejarlos arriba y asi evitar conflictos
+
+.copago-maximo{
+   padding: 2em;
+}
+
 .copago{
    color: $primary-color;
    font-weight: 600;
@@ -23,11 +28,10 @@
       margin-right: 2em;
       vertical-align: middle;
       width: 15%;
-   }
 
-
-   .checkbox{
-      width: 100%;
+      .checkbox{
+         width: 100%;
+      }
    }
 
 

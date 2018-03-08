@@ -1,0 +1,143 @@
+.buscador{
+   background-color: rgba(38, 98, 193, .2);
+   border: 1px solid red;
+   padding: 4em 0;
+   margin-top: 3em;
+   overflow: hidden;
+
+   .titulo__descripcion{
+      font-weight: 600;
+   }
+}
+
+.filtro{
+   display: inline-block;
+   vertical-align: middle;
+   .checkbox{
+      display: inline-block;
+      margin: .3em 0;
+      width: 100%;
+   }
+}
+
+.buscador__campo{
+   display: inline-block;
+   position: relative;
+
+
+   input{
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      border-radius: 7px;
+      height: 55px;
+      padding: 1em;
+      position: relative;
+      width: 360px;
+   }
+
+   input::-webkit-input-placeholder {
+     color: $primary-color;
+     font-weight: 600;
+   }
+   input:-moz-placeholder {
+     color: $primary-color;
+     font-weight: 600;
+   }
+   input:-ms-input-placeholder {
+     color: $primary-color;
+     font-weight: 600;
+   }
+}
+
+.buscador__icon{
+   color: $primary-color;
+   @include font-size(28);
+   position: absolute;
+   top: .5em;
+   right: 1em;
+}
+
+
+.buscador__titulos{
+   color: $primary-color;
+   display: flex;
+   @include font-size(14);
+   font-weight: 600;
+   margin: 4em 0 1em 0;
+   justify-content: space-around;
+}
+
+.buscador__titulo{
+   text-align: center;
+   &:first-child{
+      visibility: hidden;
+   }
+}
+
+.buscador__titulo-icon{
+   display: block;
+   background-color: rgba(255,255,255,.0);
+   border: 1px solid $primary-color;
+   border-radius: 50%;
+   color: $primary-color;
+   height: 35px;
+   @include font-size(16);
+   @include line-height(35);
+   margin: 0 auto .3em auto;
+   text-align: center;
+   transition: all .3s ease-out;
+   width: 35px;
+
+   &:hover{
+      background-color: $primary-color;
+      color: #fff;
+   }
+}
+
+.resultado{
+   color: $primary-color;
+   max-height: 320px;
+   overflow-y: scroll;
+
+   &__item{
+      border: 1px solid $primary-color;
+      border-radius: 7px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include font-size(14);
+      @include line-height(18);
+      margin-top: .5em;
+      overflow: hidden;
+      width: 100%;
+   }
+
+   &__nombre, &__bonificacion-copago, &__final{
+      @include font-size(16);
+      font-weight: 600;
+   }
+
+   &__nombre{
+      max-width: 150px;
+      text-align: center;
+   }
+
+   &__bonificacion-copago{
+      color: #fff;
+   }
+
+   &__icon{
+      color: #01A567;
+   }
+
+   &__final{
+      background-color: $primary-color;
+      color: #fff;
+      height: 80px;
+      line-height: 80px;
+      margin-right: -10px;
+      text-align: center;
+      width: 170px;
+   }
+}

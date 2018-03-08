@@ -319,9 +319,10 @@ input[type="checkbox"] {
 
 /* line 1, app/scss/componentes/titulo.scss */
 .titulo {
+  color: #0836C0;
   margin: 3em 0 4em 0;
   position: relative; }
-  /* line 5, app/scss/componentes/titulo.scss */
+  /* line 6, app/scss/componentes/titulo.scss */
   .titulo__icon {
     display: inline-block;
     background-color: #0836C0;
@@ -334,9 +335,8 @@ input[type="checkbox"] {
     line-height: 2.5rem;
     text-align: center;
     width: 40px; }
-  /* line 16, app/scss/componentes/titulo.scss */
+  /* line 17, app/scss/componentes/titulo.scss */
   .titulo__name {
-    color: #0836C0;
     display: inline-block;
     font-size: 18px;
     font-size: 1.125rem;
@@ -972,38 +972,42 @@ por ahora esta con un hover para poder visualizar el efecto.
     top: 1em;
     right: 1em; }
 
-/* line 3, app/scss/componentes/copago.scss */
+/* line 4, app/scss/componentes/copago.scss */
+.copago-maximo {
+  padding: 2em; }
+
+/* line 8, app/scss/componentes/copago.scss */
 .copago {
   color: #0836C0;
   font-weight: 600; }
-  /* line 7, app/scss/componentes/copago.scss */
+  /* line 12, app/scss/componentes/copago.scss */
   .copago__header {
     position: relative; }
-    /* line 10, app/scss/componentes/copago.scss */
+    /* line 15, app/scss/componentes/copago.scss */
     .copago__header .auxiliares {
       top: -.5em; }
-  /* line 15, app/scss/componentes/copago.scss */
+  /* line 20, app/scss/componentes/copago.scss */
   .copago__titulo {
     font-size: 16px;
     font-size: 1rem;
     line-height: 20px;
     line-height: 1.25rem;
     margin: 2em 0; }
-  /* line 21, app/scss/componentes/copago.scss */
+  /* line 26, app/scss/componentes/copago.scss */
   .copago__accion {
     display: inline-block;
     margin-right: 2em;
     vertical-align: middle;
     width: 15%; }
-  /* line 29, app/scss/componentes/copago.scss */
-  .copago .checkbox {
-    width: 100%; }
-  /* line 34, app/scss/componentes/copago.scss */
+    /* line 32, app/scss/componentes/copago.scss */
+    .copago__accion .checkbox {
+      width: 100%; }
+  /* line 38, app/scss/componentes/copago.scss */
   .copago__opciones {
     display: inline-block;
     vertical-align: middle;
     width: 80%; }
-  /* line 40, app/scss/componentes/copago.scss */
+  /* line 44, app/scss/componentes/copago.scss */
   .copago__opciones-item {
     border: 1px solid #0836C0;
     border-radius: 30px;
@@ -1016,29 +1020,168 @@ por ahora esta con un hover para poder visualizar el efecto.
     margin-left: 1em;
     padding: .5em 1.5em;
     text-transform: uppercase; }
-    /* line 51, app/scss/componentes/copago.scss */
+    /* line 55, app/scss/componentes/copago.scss */
     .copago__opciones-item:hover {
       border: 1px solid #4C88D6;
       color: #0836C0; }
-  /* line 58, app/scss/componentes/copago.scss */
+  /* line 62, app/scss/componentes/copago.scss */
   .copago .copago__opciones-item--active {
     background-color: #E8403C;
     border: 1px solid  #E8403C;
     color: #fff; }
-  /* line 65, app/scss/componentes/copago.scss */
+  /* line 69, app/scss/componentes/copago.scss */
   .copago__info {
     border: 1px solid #0836C0;
     border-radius: 7px;
     margin-top: 2em;
     padding: 1em;
     position: relative; }
-    /* line 72, app/scss/componentes/copago.scss */
+    /* line 76, app/scss/componentes/copago.scss */
     .copago__info .auxiliares {
       top: .7em;
       right: 1em; }
-  /* line 78, app/scss/componentes/copago.scss */
+  /* line 82, app/scss/componentes/copago.scss */
   .copago__alert {
     text-transform: uppercase;
     text-align: center; }
+
+/* line 1, app/scss/componentes/buscador.scss */
+.buscador {
+  background-color: rgba(38, 98, 193, 0.2);
+  border: 1px solid red;
+  padding: 4em 0;
+  margin-top: 3em;
+  overflow: hidden; }
+  /* line 8, app/scss/componentes/buscador.scss */
+  .buscador .titulo__descripcion {
+    font-weight: 600; }
+
+/* line 13, app/scss/componentes/buscador.scss */
+.filtro {
+  display: inline-block;
+  vertical-align: middle; }
+  /* line 16, app/scss/componentes/buscador.scss */
+  .filtro .checkbox {
+    display: inline-block;
+    margin: .3em 0;
+    width: 100%; }
+
+/* line 23, app/scss/componentes/buscador.scss */
+.buscador__campo {
+  display: inline-block;
+  position: relative; }
+  /* line 28, app/scss/componentes/buscador.scss */
+  .buscador__campo input {
+    background-color: transparent;
+    border: 1px solid #0836C0;
+    border-radius: 7px;
+    height: 55px;
+    padding: 1em;
+    position: relative;
+    width: 360px; }
+  /* line 38, app/scss/componentes/buscador.scss */
+  .buscador__campo input::-webkit-input-placeholder {
+    color: #0836C0;
+    font-weight: 600; }
+  /* line 42, app/scss/componentes/buscador.scss */
+  .buscador__campo input:-moz-placeholder {
+    color: #0836C0;
+    font-weight: 600; }
+  /* line 46, app/scss/componentes/buscador.scss */
+  .buscador__campo input:-ms-input-placeholder {
+    color: #0836C0;
+    font-weight: 600; }
+
+/* line 52, app/scss/componentes/buscador.scss */
+.buscador__icon {
+  color: #0836C0;
+  font-size: 28px;
+  font-size: 1.75rem;
+  position: absolute;
+  top: .5em;
+  right: 1em; }
+
+/* line 61, app/scss/componentes/buscador.scss */
+.buscador__titulos {
+  color: #0836C0;
+  display: flex;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 4em 0 1em 0;
+  justify-content: space-around; }
+
+/* line 70, app/scss/componentes/buscador.scss */
+.buscador__titulo {
+  text-align: center; }
+  /* line 72, app/scss/componentes/buscador.scss */
+  .buscador__titulo:first-child {
+    visibility: hidden; }
+
+/* line 77, app/scss/componentes/buscador.scss */
+.buscador__titulo-icon {
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #0836C0;
+  border-radius: 50%;
+  color: #0836C0;
+  height: 35px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  margin: 0 auto .3em auto;
+  text-align: center;
+  transition: all .3s ease-out;
+  width: 35px; }
+  /* line 91, app/scss/componentes/buscador.scss */
+  .buscador__titulo-icon:hover {
+    background-color: #0836C0;
+    color: #fff; }
+
+/* line 97, app/scss/componentes/buscador.scss */
+.resultado {
+  color: #0836C0;
+  max-height: 320px;
+  overflow-y: scroll; }
+  /* line 102, app/scss/componentes/buscador.scss */
+  .resultado__item {
+    border: 1px solid #0836C0;
+    border-radius: 7px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    margin-top: .5em;
+    overflow: hidden;
+    width: 100%; }
+  /* line 116, app/scss/componentes/buscador.scss */
+  .resultado__nombre, .resultado__bonificacion-copago, .resultado__final {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600; }
+  /* line 121, app/scss/componentes/buscador.scss */
+  .resultado__nombre {
+    max-width: 150px;
+    text-align: center; }
+  /* line 126, app/scss/componentes/buscador.scss */
+  .resultado__bonificacion-copago {
+    color: #fff; }
+  /* line 130, app/scss/componentes/buscador.scss */
+  .resultado__icon {
+    color: #01A567; }
+  /* line 134, app/scss/componentes/buscador.scss */
+  .resultado__final {
+    background-color: #0836C0;
+    color: #fff;
+    height: 80px;
+    line-height: 80px;
+    margin-right: -10px;
+    text-align: center;
+    width: 170px; }
 
 /* CLASES DE AYUDA - SIEMPRE AL FINAL */

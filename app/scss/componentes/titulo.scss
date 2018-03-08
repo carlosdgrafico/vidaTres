@@ -1,5 +1,7 @@
 .titulo{
    margin: 3em 0 4em 0;
+   position: relative;
+
    &__icon{
       display: inline-block;
       background-color: $primary-color;

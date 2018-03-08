@@ -1,0 +1,25 @@
+.auxiliares{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+
+   &__icon{
+      display: inline-block;
+      background-color: #fff;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      color: $primary-color;
+      height: 35px;
+      @include font-size(16);
+      @include line-height(35);
+      margin-left: .5em;
+      text-align: center;
+      transition: all .3s ease-out;
+      width: 35px;
+
+      &:hover{
+         background-color: $primary-color;
+         color: #fff;
+      }
+   }
+}

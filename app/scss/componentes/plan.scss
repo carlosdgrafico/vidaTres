@@ -1,7 +1,11 @@
 .plan{
-   border: 1px solid red;
-   max-width: 420px;
-   position: relative;
+   max-width: 500px;
+   min-width: 420px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100%;
+   overflow: scroll;
 
    &__header{
       background-color: $primary-color;
@@ -10,7 +14,7 @@
       justify-content: space-between;
       @include font-size(14);
       @include line-height(19);
-      padding: 1em;
+      padding: 1.5em;
       position: relative;
    }
 
@@ -34,8 +38,8 @@
 
    &__beneficiarios{
       position: absolute;
-      bottom: 1em;
-      right: 1em;
+      bottom: 1.5em;
+      right: 1.5em;
    }
 
    &__beneficiarios-icon{
@@ -68,7 +72,7 @@
       @include font-size(14);
       @include line-height(20);
       font-weight: 600;
-      padding: 1em;
+      padding: 1.5em;
       position: relative;
    }
 
@@ -106,8 +110,8 @@
       @include font-size(8);
       @include line-height(20);
       position: absolute;
-      top: 1em;
-      right: 1em;
+      top: 1.5em;
+      right: 1.5em;
       text-align: center;
       width: 20px;
    }
@@ -120,8 +124,7 @@
    }
 
    &__chart{
-      // border: 1px solid olive;
-      padding: 1em;
+      padding: 1.5em;
       position: relative;
       width: 50%;
    }
@@ -141,7 +144,7 @@
    }
 
    &__seguro, &__adicionales{
-      padding: 1em;
+      padding: 1.5em;
       position: relative;
       text-align: center;
       width: 50%;
@@ -209,11 +212,11 @@
       background-color: $farmacia-color;
    }
 
-   &__edit{
+   &__edit-productos{
       @include font-size(14);
       position: absolute;
-      top: 1em;
-      right: 1em;
+      top: 1.3em;
+      right: 1.3em;
    }
 
 
@@ -225,7 +228,7 @@
       border-bottom: 1px solid #EFEFEF;
       display: flex;
       justify-content: space-between;
-      padding: .7em 1em;
+      padding: 1em 1.5em;
    }
 
    &__valor-nombre{
@@ -255,7 +258,7 @@
       color: #fff;
       @include font-size(14);
       @include line-height(19);
-      padding: 1em;
+      padding: 2em 1.5em;
       position: relative;
    }
 
@@ -280,10 +283,11 @@
       line-height: 22px;
       text-align: center;
       position: absolute;
-      top: 1em;
-      right: 1.1em;
+      top: 1.5em;
+      right: 1.8em;
       width: 22px;
    }
+
 
    &__link{
       background-color: #4B89D6;
@@ -297,10 +301,8 @@
 
       &:hover{
          color: #fff;
-         text-decoration: none;
          opacity: .9;
       }
    }
-
 
 }

@@ -11,7 +11,7 @@ body
 				.col-xs-1
 					figure.logotipo
 						img(src="./img/logotipo-vidatres.png", alt="")
-				.col-xs-9
+				.col-xs-7
 					.step
 						.step__linea
 						.step__paso
@@ -22,7 +22,7 @@ body
 							span.step__numero 3
 						.step__paso
 							span.step__numero 4
-				.col-xs-10
+				.col-xs-8
 					.titulo
 						span.titulo__icon.icon-avion
 						h2.titulo__name paso 2
@@ -32,7 +32,7 @@ body
 							span.auxiliares__icon.icon-info
 							span.auxiliares__icon.icon-audio
 			.row
-				.col-xs-5
+				.col-xs-4
 					article.red
 						.red__container
 							.red__header
@@ -52,7 +52,7 @@ body
 									.col-xs-5
 										figure.red__clinica
 											img(src="./img/integramedica.png", alt="Logotipo clinica")
-				.col-xs-5
+				.col-xs-4
 					article.red.red--active
 						.red__container
 							.red__header
@@ -72,7 +72,8 @@ body
 									.col-xs-5
 										figure.red__clinica
 											img(src="./img/integramedica.png", alt="Logotipo clinica")
-				.col-xs-5
+				.clearfix
+				.col-xs-4
 					article.red
 						.red__container
 							.red__header
@@ -89,7 +90,7 @@ body
 									.col-xs-5.col-xs-offset-6
 										figure.red__clinica
 											img(src="./img/integramedica.png", alt="Logotipo clinica")
-				.col-xs-5
+				.col-xs-4
 					article.red
 						.red__container
 							.red__header
@@ -154,7 +155,7 @@ body
 							.plan__icon.icon-asistencia
 							.plan__icon.icon-dental
 							.plan__icon.icon-farmacia
-						span.plan__edit.icon-edit
+						span.plan__edit-productos.icon-edit
 							
 				ul.plan__valores
 					li.plan__valores-item
@@ -191,7 +192,7 @@ body
 				p.plan__total-saldo $160.000
 					span 5 UF/mes
 						
-				.bar
+				.bar.bar--active
 					.bar__progreso
 						p.bar__progreso-info $130.000 - 4,5 uf
 						p.bar__progreso-info $30.000 - 0,5 uf
@@ -202,11 +203,7 @@ body
 				span.plan__help.icon-audio
 			a.plan__link(href="javascript:;") ver mi plan
 				
-				
-							
-					
-				
-												
+													
 			
 	include templates/footer
 

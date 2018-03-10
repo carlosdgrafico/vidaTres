@@ -126,10 +126,13 @@
    }
 
    &__chart{
+      min-height: 170px;
       padding: 1.5em;
+      overflow: hidden;
       position: relative;
       width: 50%;
    }
+
 
    &__chart-titulo{
       font-weight: 600;

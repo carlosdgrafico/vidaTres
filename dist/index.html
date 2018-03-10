@@ -171,13 +171,17 @@
           <div class="plan__chart">
             <p class="plan__chart-titulo">Cobertura<span>ambulatoria</span></p>
             <div class="plan__chart-detalle">
-              <!-- aqui va el gráfico-->
+              <div class="grafico">
+                <div class="container chart-ambulatoria--plan" data-size="70" data-value="70" data-arrow="up"></div>
+              </div>
             </div><span class="plan__close icon-cerrar"></span>
           </div>
           <div class="plan__chart">
             <p class="plan__chart-titulo">Cobertura<span>hospilataria</span></p>
             <div class="plan__chart-detalle">
-              <!-- aqui va el gráfico-->
+              <div class="grafico">
+                <div class="container chart-hospilataria--plan" data-size="70" data-value="40" data-arrow="up"></div>
+              </div>
             </div><span class="plan__close icon-cerrar"></span>
           </div>
         </div>
@@ -239,8 +243,10 @@
               <div class="auxiliares auxiliares--negativo"><span class="auxiliares__icon icon-info"></span><span class="auxiliares__icon icon-audio"></span></div>
             </div>
             <div class="cobertura__chart">
-              <div class="cobertura__detalle"><span>grafico</span>
-                <!-- grafico-->
+              <div class="cobertura__detalle">
+                <div class="grafico grafico--cobertura">
+                  <div class="container chart-ambulatoria" data-size="100" data-value="70" data-arrow="up"></div>
+                </div>
               </div>
               <div class="cobertura__opciones"><span class="cobertura__opciones-item cobertura__opciones-item--active">50%</span><span class="cobertura__opciones-item">70%</span><br><span class="cobertura__opciones-item">60%</span><span class="cobertura__opciones-item">80%</span></div>
             </div>
@@ -249,12 +255,14 @@
         <div class="col-xs-4">
           <article class="cobertura">
             <div class="cobertura__header">
-              <p class="cobertura__titulo">Cobertura ambulatoria y urgencia</p>
+              <p class="cobertura__titulo">Cobertura hospitalaria</p>
               <div class="auxiliares auxiliares--negativo"><span class="auxiliares__icon icon-info"></span><span class="auxiliares__icon icon-audio"></span></div>
             </div>
             <div class="cobertura__chart">
               <div class="cobertura__detalle">
-                <!-- gráfico-->
+                <div class="grafico grafico--cobertura">
+                  <div class="container chart-hospitalaria" data-size="100" data-value="40" data-arrow="up"></div>
+                </div>
               </div>
               <div class="cobertura__opciones"><span class="cobertura__opciones-item">50%</span><span class="cobertura__opciones-item">70%</span><span class="cobertura__opciones-item">60%</span><span class="cobertura__opciones-item">80%</span><span class="cobertura__opciones-item">90%</span><span class="cobertura__opciones-item">100%</span></div>
             </div>
@@ -400,7 +408,9 @@
             <div class="seguro__detalle">
               <div class="seguro__grafica"><span class="seguro__icon icon-dental"></span>
                 <div class="seguro__chart">
-                  <!-- gráfico-->
+                  <div class="grafico grafico--dental">
+                    <div class="container chart-dental" data-size="70" data-value="50" data-arrow="up"></div>
+                  </div>
                 </div>
               </div>
               <div class="seguro__info">
@@ -490,9 +500,8 @@
           <article class="seguro u-asistencia">
             <div class="seguro__detalle">
               <div class="seguro__grafica"><span class="seguro__icon icon-asistencia"></span>
-                <div class="seguro__chart">
-                  <!-- gráfico-->
-                </div>
+                <!--.seguro__chart // según diseño aqui no va gráfico// gráfico
+                -->
               </div>
               <div class="seguro__info">
                 <h4 class="seguro__titulo">seguro asistencia</h4>
@@ -582,7 +591,9 @@
             <div class="seguro__detalle">
               <div class="seguro__grafica"><span class="seguro__icon icon-farmacia"></span>
                 <div class="seguro__chart">
-                  <!-- gráfico-->
+                  <div class="grafico grafico--farmacia">
+                    <div class="container chart-farmacia" data-size="70" data-value="50" data-arrow="up"></div>
+                  </div>
                 </div>
               </div>
               <div class="seguro__info">

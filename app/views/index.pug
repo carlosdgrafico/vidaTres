@@ -5,7 +5,7 @@ head
 	title vidaTres - step
 	include templates/head
 body
-	
+
 	//- Esta navegación es para realizar una pruba de conceptos, los estilos estan en generales.scss
 	section.navegacion-fidex
 		.container
@@ -33,7 +33,7 @@ body
 						.auxiliares
 							span.auxiliares__icon.icon-info
 							span.auxiliares__icon.icon-audio
-								
+
 	section.plan-cliente
 		.container
 			.row
@@ -165,13 +165,15 @@ body
 						p.plan__chart-titulo Cobertura
 							span ambulatoria
 						.plan__chart-detalle
-							// aqui va el gráfico
+							.grafico
+								.container.chart-ambulatoria--plan(data-size="70" data-value="70" data-arrow="up")
 						span.plan__close.icon-cerrar
 					.plan__chart
 						p.plan__chart-titulo Cobertura
 							span hospilataria
 						.plan__chart-detalle
-							// aqui va el gráfico
+							.grafico
+								.container.chart-hospilataria--plan(data-size="70" data-value="40" data-arrow="up")
 						span.plan__close.icon-cerrar
 
 				.plan__productos
@@ -245,8 +247,8 @@ body
 								span.auxiliares__icon.icon-audio
 						.cobertura__chart
 							.cobertura__detalle
-								span grafico
-								// grafico
+								.grafico.grafico--cobertura
+									.container.chart-ambulatoria(data-size="100" data-value="70" data-arrow="up")
 							.cobertura__opciones
 								span.cobertura__opciones-item.cobertura__opciones-item--active 50%
 								span.cobertura__opciones-item 70%
@@ -256,13 +258,14 @@ body
 				.col-xs-4
 					article.cobertura
 						.cobertura__header
-							p.cobertura__titulo Cobertura ambulatoria y urgencia
+							p.cobertura__titulo Cobertura hospitalaria
 							.auxiliares.auxiliares--negativo
 								span.auxiliares__icon.icon-info
 								span.auxiliares__icon.icon-audio
 						.cobertura__chart
 							.cobertura__detalle
-								// gráfico
+								.grafico.grafico--cobertura
+									.container.chart-hospitalaria(data-size="100" data-value="40" data-arrow="up")
 							.cobertura__opciones
 								span.cobertura__opciones-item 50%
 								span.cobertura__opciones-item 70%
@@ -406,7 +409,7 @@ body
 							p.resultado__bonificacion-copago $4.800.000
 							span.resultado__icon.icon-Combined-Shape
 							p.resultado__final $1.500.000
-							
+
 	section.seguros-adicionales
 		.container
 			.row
@@ -424,7 +427,8 @@ body
 							.seguro__grafica
 								span.seguro__icon.icon-dental
 								.seguro__chart
-									// gráfico
+									.grafico.grafico--dental
+										.container.chart-dental(data-size="70" data-value="50" data-arrow="up")
 							.seguro__info
 								h4.seguro__titulo seguro dental
 								p.seguro__text Sabemos lo importante que es la salud dental para tus hijos y como tienes un beneficiario de 5 años, te recomendamos agregar este seguro.
@@ -511,7 +515,7 @@ body
 						.seguro__detalle
 							.seguro__grafica
 								span.seguro__icon.icon-asistencia
-								.seguro__chart
+								//.seguro__chart // según diseño aqui no va gráfico
 									// gráfico
 							.seguro__info
 								h4.seguro__titulo seguro asistencia
@@ -603,7 +607,8 @@ body
 							.seguro__grafica
 								span.seguro__icon.icon-farmacia
 								.seguro__chart
-									// gráfico
+									.grafico.grafico--farmacia
+										.container.chart-farmacia(data-size="70" data-value="50" data-arrow="up")
 							.seguro__info
 								h4.seguro__titulo seguro farmacia
 								p.seguro__text Sabemos lo importante que es la salud dental para tus hijos y como tienes un beneficiario de 5 años, te recomendamos agregar este seguro.
@@ -685,7 +690,7 @@ body
 										p.seguro__nombre.seguro__nombre--total Total :
 											span 0,40 UF/mes
 						span.seguro__close.icon-cerrar
-								
+
 
 
 

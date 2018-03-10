@@ -604,31 +604,33 @@ input[type="checkbox"] {
     justify-content: space-between; }
   /* line 128, app/scss/componentes/plan.scss */
   .plan__chart {
+    min-height: 170px;
     padding: 1.5em;
+    overflow: hidden;
     position: relative;
     width: 50%; }
-  /* line 134, app/scss/componentes/plan.scss */
+  /* line 137, app/scss/componentes/plan.scss */
   .plan__chart-titulo {
     font-weight: 600;
     text-align: center; }
-    /* line 137, app/scss/componentes/plan.scss */
+    /* line 140, app/scss/componentes/plan.scss */
     .plan__chart-titulo span {
       display: block; }
-  /* line 142, app/scss/componentes/plan.scss */
+  /* line 145, app/scss/componentes/plan.scss */
   .plan__productos {
     border-bottom: 1px solid #EFEFEF;
     display: flex;
     justify-content: space-between; }
-  /* line 148, app/scss/componentes/plan.scss */
+  /* line 151, app/scss/componentes/plan.scss */
   .plan__seguro, .plan__adicionales {
     padding: 1.5em;
     position: relative;
     text-align: center;
     width: 50%; }
-  /* line 155, app/scss/componentes/plan.scss */
+  /* line 158, app/scss/componentes/plan.scss */
   .plan__productos-titulo {
     font-weight: 600; }
-  /* line 159, app/scss/componentes/plan.scss */
+  /* line 162, app/scss/componentes/plan.scss */
   .plan__uf {
     border: 1px solid #0836C0;
     border-radius: 20px;
@@ -640,15 +642,15 @@ input[type="checkbox"] {
     margin: 1em 0 0 0;
     padding: .5em 1em;
     text-transform: uppercase; }
-  /* line 171, app/scss/componentes/plan.scss */
+  /* line 174, app/scss/componentes/plan.scss */
   .plan__adicionales {
     background-color: #F6F6F6;
     position: relative; }
-  /* line 176, app/scss/componentes/plan.scss */
+  /* line 179, app/scss/componentes/plan.scss */
   .plan__adicionales-productos {
     display: flex;
     justify-content: space-around; }
-  /* line 181, app/scss/componentes/plan.scss */
+  /* line 184, app/scss/componentes/plan.scss */
   .plan__icon {
     background-color: #E8403C;
     border-radius: 50%;
@@ -662,7 +664,7 @@ input[type="checkbox"] {
     position: relative;
     text-align: center;
     width: 35px; }
-    /* line 193, app/scss/componentes/plan.scss */
+    /* line 196, app/scss/componentes/plan.scss */
     .plan__icon:after {
       content: "\e903";
       border: 1px solid #D8D6D6;
@@ -679,36 +681,36 @@ input[type="checkbox"] {
       right: -10px;
       text-align: center;
       width: 16px; }
-  /* line 210, app/scss/componentes/plan.scss */
+  /* line 213, app/scss/componentes/plan.scss */
   .plan .icon-dental {
     background-color: #0836C0; }
-  /* line 213, app/scss/componentes/plan.scss */
+  /* line 216, app/scss/componentes/plan.scss */
   .plan .icon-farmacia {
     background-color: #01A567; }
-  /* line 217, app/scss/componentes/plan.scss */
+  /* line 220, app/scss/componentes/plan.scss */
   .plan__edit-productos {
     font-size: 14px;
     font-size: 0.875rem;
     position: absolute;
     top: 1.3em;
     right: 1.3em; }
-  /* line 225, app/scss/componentes/plan.scss */
+  /* line 228, app/scss/componentes/plan.scss */
   .plan__valores {
     margin: 0; }
-  /* line 229, app/scss/componentes/plan.scss */
+  /* line 232, app/scss/componentes/plan.scss */
   .plan__valores-item {
     border-bottom: 1px solid #EFEFEF;
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em; }
-  /* line 236, app/scss/componentes/plan.scss */
+  /* line 239, app/scss/componentes/plan.scss */
   .plan__valor-nombre {
     font-weight: 600; }
-    /* line 238, app/scss/componentes/plan.scss */
+    /* line 241, app/scss/componentes/plan.scss */
     .plan__valor-nombre span {
       color: #01A567;
       margin-right: 1em; }
-  /* line 245, app/scss/componentes/plan.scss */
+  /* line 248, app/scss/componentes/plan.scss */
   .plan__monto span {
     border: 1px solid #0836C0;
     border-radius: 50%;
@@ -718,7 +720,7 @@ input[type="checkbox"] {
     line-height: 20px;
     text-align: center;
     width: 20px; }
-  /* line 258, app/scss/componentes/plan.scss */
+  /* line 261, app/scss/componentes/plan.scss */
   .plan__footer {
     background-color: #0836C0;
     color: #fff;
@@ -728,19 +730,19 @@ input[type="checkbox"] {
     line-height: 1.1875rem;
     padding: 2em 1.5em;
     position: relative; }
-  /* line 267, app/scss/componentes/plan.scss */
+  /* line 270, app/scss/componentes/plan.scss */
   .plan__total-saldo {
     font-size: 32px;
     font-size: 2rem;
     font-weight: 600;
     margin: .5em 0; }
-    /* line 271, app/scss/componentes/plan.scss */
+    /* line 274, app/scss/componentes/plan.scss */
     .plan__total-saldo span {
       font-size: 14px;
       font-size: 0.875rem;
       font-weight: 400;
       margin-left: 1em; }
-  /* line 278, app/scss/componentes/plan.scss */
+  /* line 281, app/scss/componentes/plan.scss */
   .plan__help {
     border: 1px solid #fff;
     border-radius: 50%;
@@ -755,7 +757,7 @@ input[type="checkbox"] {
     top: 1.5em;
     right: 1.8em;
     width: 22px; }
-  /* line 294, app/scss/componentes/plan.scss */
+  /* line 297, app/scss/componentes/plan.scss */
   .plan__link {
     background-color: #4B89D6;
     color: #fff;
@@ -767,7 +769,7 @@ input[type="checkbox"] {
     text-transform: uppercase;
     text-align: center;
     width: 100%; }
-    /* line 304, app/scss/componentes/plan.scss */
+    /* line 307, app/scss/componentes/plan.scss */
     .plan__link:hover {
       color: #fff;
       opacity: .9; }
@@ -879,18 +881,18 @@ por ahora esta con un hover para poder visualizar el efecto.
 
 /* line 35, app/scss/componentes/cobertura.scss */
 .cobertura__detalle {
-  border: 1px solid olive;
-  width: 130px;
-  height: 130px; }
+  position: relative;
+  height: 130px;
+  width: 130px; }
 
-/* line 41, app/scss/componentes/cobertura.scss */
+/* line 42, app/scss/componentes/cobertura.scss */
 .cobertura__opciones {
   width: 40%; }
-  /* line 43, app/scss/componentes/cobertura.scss */
+  /* line 44, app/scss/componentes/cobertura.scss */
   .cobertura__opciones:last-child {
     width: 50%; }
 
-/* line 48, app/scss/componentes/cobertura.scss */
+/* line 49, app/scss/componentes/cobertura.scss */
 .cobertura__opciones-item {
   background-color: #fff;
   border-radius: 50%;
@@ -907,16 +909,16 @@ por ahora esta con un hover para poder visualizar el efecto.
   text-align: center;
   transition: all .3s ease-out;
   width: 44px; }
-  /* line 63, app/scss/componentes/cobertura.scss */
+  /* line 64, app/scss/componentes/cobertura.scss */
   .cobertura__opciones-item:hover {
     font-weight: 700; }
-  /* line 67, app/scss/componentes/cobertura.scss */
+  /* line 68, app/scss/componentes/cobertura.scss */
   .cobertura__opciones-item--active {
     background-color: #E8403C;
     color: #fff;
     font-weight: 700; }
 
-/* line 75, app/scss/componentes/cobertura.scss */
+/* line 76, app/scss/componentes/cobertura.scss */
 .informativo {
   color: #0836C0;
   font-size: 16px;
@@ -924,10 +926,10 @@ por ahora esta con un hover para poder visualizar el efecto.
   line-height: 22px;
   line-height: 1.375rem;
   margin: 4em 0 0 0; }
-  /* line 81, app/scss/componentes/cobertura.scss */
+  /* line 82, app/scss/componentes/cobertura.scss */
   .informativo__titulo {
     font-weight: 600; }
-  /* line 85, app/scss/componentes/cobertura.scss */
+  /* line 86, app/scss/componentes/cobertura.scss */
   .informativo__container {
     background-color: rgba(38, 98, 193, 0.1);
     border: 1px solid #0836C0;
@@ -937,36 +939,36 @@ por ahora esta con un hover para poder visualizar el efecto.
     justify-content: space-between;
     margin-top: 1em;
     overflow: hidden; }
-  /* line 97, app/scss/componentes/cobertura.scss */
+  /* line 98, app/scss/componentes/cobertura.scss */
   .informativo__cobertura, .informativo__tope {
     border-right: 1px solid #0836C0;
     padding: 1.5em;
     position: relative;
     text-align: left;
     width: 60%; }
-  /* line 105, app/scss/componentes/cobertura.scss */
+  /* line 106, app/scss/componentes/cobertura.scss */
   .informativo__tope {
     border: none;
     text-align: center;
     width: 40%; }
-  /* line 111, app/scss/componentes/cobertura.scss */
+  /* line 112, app/scss/componentes/cobertura.scss */
   .informativo__cobertura-titulo, .informativo__tope-titulo {
     font-size: 18px;
     font-size: 1.125rem;
     text-transform: uppercase; }
-    /* line 114, app/scss/componentes/cobertura.scss */
+    /* line 115, app/scss/componentes/cobertura.scss */
     .informativo__cobertura-titulo span, .informativo__tope-titulo span {
       display: block;
       margin: 0; }
-  /* line 120, app/scss/componentes/cobertura.scss */
+  /* line 121, app/scss/componentes/cobertura.scss */
   .informativo__tope-titulo {
     margin-top: 2em; }
-  /* line 124, app/scss/componentes/cobertura.scss */
+  /* line 125, app/scss/componentes/cobertura.scss */
   .informativo__item {
     font-weight: 400;
     margin-top: 1.2em;
     width: 80%; }
-  /* line 130, app/scss/componentes/cobertura.scss */
+  /* line 131, app/scss/componentes/cobertura.scss */
   .informativo__porcentaje {
     background-color: #fff;
     border-radius: 50%;
@@ -983,7 +985,7 @@ por ahora esta con un hover para poder visualizar el efecto.
     text-align: center;
     vertical-align: middle;
     width: 35px; }
-  /* line 146, app/scss/componentes/cobertura.scss */
+  /* line 147, app/scss/componentes/cobertura.scss */
   .informativo .auxiliares {
     top: 1em;
     right: 1em; }
@@ -1247,27 +1249,27 @@ por ahora esta con un hover para poder visualizar el efecto.
     width: 70px; }
   /* line 50, app/scss/componentes/seguros.scss */
   .seguro__chart {
-    border: 1px solid red;
     height: 70px;
+    position: relative;
     width: 70px; }
-  /* line 56, app/scss/componentes/seguros.scss */
+  /* line 57, app/scss/componentes/seguros.scss */
   .seguro__info {
     text-align: left; }
-  /* line 60, app/scss/componentes/seguros.scss */
+  /* line 61, app/scss/componentes/seguros.scss */
   .seguro__titulo {
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase; }
-  /* line 66, app/scss/componentes/seguros.scss */
+  /* line 67, app/scss/componentes/seguros.scss */
   .seguro__text {
     color: #8B8B8B;
     margin: .5em 0 1em 0; }
-  /* line 71, app/scss/componentes/seguros.scss */
+  /* line 72, app/scss/componentes/seguros.scss */
   .seguro__footer {
     font-weight: 600;
     margin: 1em 0; }
-  /* line 76, app/scss/componentes/seguros.scss */
+  /* line 77, app/scss/componentes/seguros.scss */
   .seguro__accion {
     background-color: #F4F4F4;
     border-radius: 50%;
@@ -1281,61 +1283,61 @@ por ahora esta con un hover para poder visualizar el efecto.
     text-align: center;
     transition: all .3s ease-out;
     width: 40px; }
-    /* line 89, app/scss/componentes/seguros.scss */
+    /* line 90, app/scss/componentes/seguros.scss */
     .seguro__accion:hover {
       background-color: #C0C8D2; }
-  /* line 94, app/scss/componentes/seguros.scss */
+  /* line 95, app/scss/componentes/seguros.scss */
   .seguro__accion--active {
     background-color: #0836C0;
     color: #fff; }
-    /* line 97, app/scss/componentes/seguros.scss */
+    /* line 98, app/scss/componentes/seguros.scss */
     .seguro__accion--active:hover {
       background-color: #0836C0;
       color: #fff; }
-  /* line 105, app/scss/componentes/seguros.scss */
+  /* line 106, app/scss/componentes/seguros.scss */
   .seguro__beneficios {
     overflow: hidden;
     background-color: #fff;
     width: 50%; }
-  /* line 111, app/scss/componentes/seguros.scss */
+  /* line 112, app/scss/componentes/seguros.scss */
   .seguro__lista {
     display: inline-block;
     vertical-align: top;
     height: 100%;
     padding: 2.5em;
     width: auto; }
-  /* line 119, app/scss/componentes/seguros.scss */
+  /* line 120, app/scss/componentes/seguros.scss */
   .seguro__item {
     display: flex;
     margin-top: 1em; }
-    /* line 123, app/scss/componentes/seguros.scss */
+    /* line 124, app/scss/componentes/seguros.scss */
     .seguro__item .checkbox {
       margin: 0 .5em 0 0; }
-  /* line 128, app/scss/componentes/seguros.scss */
+  /* line 129, app/scss/componentes/seguros.scss */
   .seguro__user {
     font-size: 24px;
     font-size: 1.5rem; }
-  /* line 132, app/scss/componentes/seguros.scss */
+  /* line 133, app/scss/componentes/seguros.scss */
   .seguro__nombre {
     display: inline-block;
     font-size: 13px;
     font-size: 0.8125rem;
     font-weight: 600;
     margin-left: .5em; }
-    /* line 137, app/scss/componentes/seguros.scss */
+    /* line 138, app/scss/componentes/seguros.scss */
     .seguro__nombre span {
       display: block;
       font-size: 10px;
       font-size: 0.625rem;
       font-weight: 400; }
-  /* line 144, app/scss/componentes/seguros.scss */
+  /* line 145, app/scss/componentes/seguros.scss */
   .seguro__nombre--total {
     margin: 1em 0 0 0; }
-    /* line 146, app/scss/componentes/seguros.scss */
+    /* line 147, app/scss/componentes/seguros.scss */
     .seguro__nombre--total span {
       display: inline-block;
       margin-left: .3em; }
-  /* line 153, app/scss/componentes/seguros.scss */
+  /* line 154, app/scss/componentes/seguros.scss */
   .seguro__close {
     border: 1px solid #D8D6D6;
     border-radius: 50%;
@@ -1352,15 +1354,15 @@ por ahora esta con un hover para poder visualizar el efecto.
     text-align: center;
     width: 20px; }
 
-/* line 175, app/scss/componentes/seguros.scss */
+/* line 176, app/scss/componentes/seguros.scss */
 .u-asistencia .icon-asistencia {
   background-color: #E8403C; }
 
-/* line 179, app/scss/componentes/seguros.scss */
+/* line 180, app/scss/componentes/seguros.scss */
 .u-asistencia .seguro__accion--active {
   background-color: #E8403C; }
 
-/* line 183, app/scss/componentes/seguros.scss */
+/* line 184, app/scss/componentes/seguros.scss */
 .u-asistencia .u-info {
   border-radius: 20px;
   font-size: 8px;
@@ -1368,19 +1370,47 @@ por ahora esta con un hover para poder visualizar el efecto.
   font-weight: 600;
   text-transform: uppercase;
   width: 70px; }
-  /* line 189, app/scss/componentes/seguros.scss */
+  /* line 190, app/scss/componentes/seguros.scss */
   .u-asistencia .u-info span {
     display: block;
     font-weight: 400;
     margin-top: -10px;
     line-height: 0px; }
 
-/* line 200, app/scss/componentes/seguros.scss */
+/* line 201, app/scss/componentes/seguros.scss */
 .u-farmacia .icon-farmacia {
   background-color: #01A567; }
 
-/* line 204, app/scss/componentes/seguros.scss */
+/* line 205, app/scss/componentes/seguros.scss */
 .u-farmacia .seguro__accion--active {
   background-color: #01A567; }
+
+/* line 1, app/scss/componentes/chart.scss */
+.grafico {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  top: 50px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  display: flex;
+  flex-direction: row; }
+
+/* line 14, app/scss/componentes/chart.scss */
+.grafico--cobertura {
+  top: -40px;
+  left: -30px; }
+
+/* line 19, app/scss/componentes/chart.scss */
+.grafico--farmacia, .grafico--dental {
+  top: 30px;
+  left: -10px; }
+
+/* line 24, app/scss/componentes/chart.scss */
+.container {
+  flex: 1;
+  padding: 1em; }
 
 /* CLASES DE AYUDA - SIEMPRE AL FINAL */

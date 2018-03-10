@@ -33,9 +33,10 @@
    }
 
    &__detalle{
-      border: 1px solid olive;
-      width: 130px;
+      // border: 1px solid olive;
+      position: relative;
       height: 130px;
+      width: 130px;
    }
 
    &__opciones{
